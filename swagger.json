@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Giang Minh Viet Apis",
+    "description": "em Vuong Hong Apis",
     "version": "1.0.0",
-    "title": "Giang Minh Viet Apis",
+    "title": "Rem Vuong Hong Apis",
     "termsOfService": "http://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -14,7 +14,7 @@
     }
   },
  
-  "host": "localhost:4000",
+  "host": "localhost:5000",
   "basePath": "/api",
   "schemes": [
     "http"
@@ -104,7 +104,7 @@
                 "content": {
                   "type": "string"
                 },
-                "category_id": {
+                "tag_id": {
                   "type": "integer"
                 }
               }
@@ -216,7 +216,7 @@
                 "content": {
                   "type": "string"
                 },
-                "category_id": {
+                "tag_id": {
                   "type": "integer"
                 }
               }
@@ -363,7 +363,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "title": {
+                "name": {
                   "type": "string"
                 },
                 "description": {
@@ -372,19 +372,21 @@
                 "model_number": {
                   "type": "string"
                 },
-                "main_image_url": {
+                "list_product_images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minItems": 0,
+                    "maxItems":6
+                  }
+                },
+                "origin": {
                   "type": "string"
                 },
-                "url_image1": {
+                "brand": {
                   "type": "string"
                 },
-                "url_image2": {
-                  "type": "string"
-                },
-                "url_image3": {
-                  "type": "string"
-                },
-                "url_image4": {
+                "thickness": {
                   "type": "string"
                 },
                 "price": {
@@ -839,6 +841,37 @@
         }
       }
     },
+    "/product/get-all-brand/list/": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get List Brand",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "$ref": "#/definitions/success"
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
     "/product/{id}": {
       "get": {
         "consumes": [
@@ -903,7 +936,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "title": {
+                "name": {
                   "type": "string"
                 },
                 "description": {
@@ -912,19 +945,21 @@
                 "model_number": {
                   "type": "string"
                 },
-                "main_image_url": {
+                "list_product_images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minItems": 0,
+                    "maxItems":6
+                  }
+                },
+                "origin": {
                   "type": "string"
                 },
-                "url_image1": {
+                "brand": {
                   "type": "string"
                 },
-                "url_image2": {
-                  "type": "string"
-                },
-                "url_image3": {
-                  "type": "string"
-                },
-                "url_image4": {
+                "thickness": {
                   "type": "string"
                 },
                 "price": {
@@ -938,10 +973,7 @@
                 },
                 "category_id": {
                   "type": "integer"
-                },
-                "slug": {
-                  "type": "string"
-                }
+                } 
               }
             }
           }
@@ -1062,60 +1094,7 @@
         }
       }
     },
-    "/product/get-by-title/{title}": {
-      "get": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "title",
-            "type": "string",
-            "in": "path",
-            "required": true
-          },{
-            "name": "productsPerPage",
-            "in": "query",
-            "description": "Max products can be display in one page",
-            "required": false
-          },
-          {
-            "name": "pageNumber",
-            "in": "query",
-            "description": "Page number",
-            "required": false
-          },
-          {
-            "name": "orderType",
-            "in": "query",
-            "description": "Order type to display: 1-oldest 2-newest ",
-            "required": false
-          }
-        ],
-        "tags": [
-          "Product Api"
-        ],
-        "summary": "Get Product By title ",
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "success",
-            "schema": {
-              "$ref": "#/definitions/product"
-            }
-          },
-          "500": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/error"
-            }
-          }
-        }
-      }
-    },
+
    
     "/product/update-image/{product_id}": {
       "put": {
@@ -1472,9 +1451,6 @@
                   "type": "string"
                 },
                 "url_image": {
-                  "type": "string"
-                },
-                "sub_image": {
                   "type": "string"
                 }
               }
@@ -1899,7 +1875,7 @@
         }
       }
     },
-    "/company-profile/": {
+    "/tag/": {
       "get": {
         "consumes": [
           "application/json"
@@ -1908,11 +1884,29 @@
           "application/json"
         ],
         "parameters": [
+          {
+            "name": "tagPerPage",
+            "in": "query",
+            "description": "Max tag can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
+          }
         ],
         "tags": [
-          "Company-Profile Api"
+          "Tag Api"
         ],
-        "summary": "Get company-profile",
+        "summary": "Get tags",
         "description": "",
         "responses": {
           "200": {
@@ -1920,7 +1914,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/company-profile"
+                "$ref": "#/definitions/tag"
               }
             }
           },
@@ -1940,7 +1934,7 @@
           "application/json"
         ],
         "parameters": [
-            {
+          {
             "name": "x-access-token",
             "in": "header",
             "required": true,
@@ -1955,33 +1949,15 @@
               "properties": {
                 "name": {
                   "type": "string"
-                },
-                "address": {
-                  "type": "string"
-                },
-                "phone": {
-                  "type": "string"
-                },
-                "mail": {
-                  "type": "string"
-                },
-                "basic_information": {
-                  "type": "string"
-                },
-                "zalo":{
-                  "type":"string"
-                },
-                "url_image": {
-                  "type": "string"
                 }
               }
             }
           }
         ],
         "tags": [
-          "Company-Profile Api"
+          "Tag Api"
         ],
-        "summary": "Create Company-Profile",
+        "summary": "Create tag",
         "description": "",
         "responses": {
           "200": {
@@ -2007,7 +1983,7 @@
         }
       }
     },
-    "/company-profile/{id}": {
+    "/tag/{id}": {
       "get": {
         "consumes": [
           "application/json"
@@ -2024,15 +2000,15 @@
           }
         ],
         "tags": [
-          "Company-Profile Api"
+          "Tag Api"
         ],
-        "summary": "Get company-profile by Id",
+        "summary": "Get tag by Id",
         "description": "",
         "responses": {
           "200": {
             "description": "success",
             "schema": {
-              "$ref": "#/definitions/company-profile"
+              "$ref": "#/definitions/tag"
             }
           },
           "500": {
@@ -2061,7 +2037,7 @@
             "name": "id",
             "type": "integer",
             "in": "path",
-            "description": "ID of Company-Profile",
+            "description": "ID of tag",
             "required": true
           },
           {
@@ -2073,33 +2049,15 @@
               "properties": {
                 "name": {
                   "type": "string"
-                },
-                "address": {
-                  "type": "string"
-                },
-                "phone": {
-                  "type": "string"
-                },
-                "mail": {
-                  "type": "string"
-                },
-                "basic_information": {
-                  "type": "string"
-                },
-                "zalo":{
-                  "type": "string"
-                },
-                "url_image": {
-                  "type": "string"
                 }
               }
             }
           }
         ],
         "tags": [
-          "Company-Profile Api"
+          "Tag Api"
         ],
-        "summary": "Update Contact by ID",
+        "summary": "Update tag by ID",
         "description": "",
         "responses": {
           "200": {
@@ -2138,15 +2096,52 @@
           }
         ],
         "tags": [
-          "Company-Profile Api"
+          "Tag Api"
         ],
-        "summary": "Delete contact by ID",
+        "summary": "Delete tag by ID",
         "description": "",
         "responses": {
           "200": {
             "description": "success",
             "schema": {
               "$ref": "#/definitions/success"
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
+    "/tag/get-by-slug/{slug}": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "slug",
+            "type": "string",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "tags": [
+          "Tag Api"
+        ],
+        "summary": "Get tag by Slug",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "$ref": "#/definitions/tag"
             }
           },
           "500": {
@@ -2682,7 +2677,7 @@
         "id": {
           "type": "integer"
         },
-        "title": {
+        "name": {
           "type": "string"
         },
         "description": {
@@ -2786,6 +2781,20 @@
           "type": "string"
         },
         "url_image": {
+          "type": "string"
+        }
+      }
+    },
+    "tag": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "slug": {
           "type": "string"
         }
       }

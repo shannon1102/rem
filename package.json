@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "rembacninh",
   "version": "1.0.0",
-  "description": "gmvwebsite",
+  "description": "rembacninh",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Err or: no test specified\" && exit 1",

@@ -51,6 +51,8 @@ categoryApi.post('/',verifyToken,adminRole,
     async (req, res, next) => {
         try {
             let {name,main_category_id} = req.body
+            console.log("????")
+            
             const insertedId = await categoryService.createCategory(name,main_category_id)
             console.log(insertedId)
             return res.status(200).json({

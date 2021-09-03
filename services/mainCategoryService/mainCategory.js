@@ -2,6 +2,7 @@
 const mysql = require('mysql');
 const logger = require('../../logger');
 const { to } = require('../../helper/to');
+const { createSlug } = require('../../utils');
 class MainCategoryService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
@@ -23,6 +24,13 @@ class MainCategoryService {
             } else {
                 orderByDb = 'DESC'
             }
+            // const query0 = `
+            //     SELECT * FROM category
+            //     WHERE main_category_id = ${mysql.escape(id)} 
+            // `
+            // console.log(query);
+            // let [err, result] = await to(this.mysqlDb.poolQuery(query))
+
             const query = `
                 SELECT * FROM main_category
                 ORDER BY create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -84,11 +92,13 @@ class MainCategoryService {
             return resolve(categoryResult)
         })
     }
-    createMainCategory(name, description, url_image,sub_image) {
+    createMainCategory(name, description, url_image) {
+        const slug = createSlug(name);
         return new Promise(async (resolve, reject) => {
+
             const query = `
-                INSERT INTO main_category(name,description,url_image,sub_image)
-                VALUES(${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(url_image)},${mysql.escape(sub_image)})`
+                INSERT INTO main_category(name,description,url_image,slug)
+                VALUES(${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(url_image)},${mysql.escape(slug)})`
 
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -99,14 +109,12 @@ class MainCategoryService {
             return resolve(result?.insertId)
         })
     }
-    updateMainCategory(id, name, description, url_image, sub_image) {
+    updateMainCategory(id, name, description) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE main_category SET 
                 name = ${mysql.escape(name)},
-                description = ${mysql.escape(description)},
-                url_image = ${mysql.escape(url_image)},
-                sub_image = ${mysql.escape(sub_image)}
+                description = ${mysql.escape(description)}
                 WHERE id = ${mysql.escape(id)}
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
@@ -125,21 +133,12 @@ class MainCategoryService {
         return new Promise(async (resolve, reject) => {
             try {
                 await this.mysqlDb.beginTransaction()
-                const query =
-                `
-                    DELETE post FROM post JOIN category ON post.category_id = category.id
-                    JOIN main_category ON main_category.id = category.main_category_id 
-                    WHERE main_category_id = ${mysql.escape(id)}
-                `
-                let result = await this.mysqlDb.poolQuery(query)
-                
                 const query0 =
                 `
                     DELETE product_image FROM product_image 
                     JOIN product ON product_image.product_id = product.id
                     JOIN category ON product.category_id = category.id
                     JOIN main_category ON main_category.id = category.main_category_id 
-
                     WHERE main_category_id = ${mysql.escape(id)} 
                 `
                 let result0 = await this.mysqlDb.poolQuery(query0)

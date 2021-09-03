@@ -26,7 +26,7 @@ class HotProductService {
                     `SELECT p.* FROM product as p  JOIN hot_product as hp
                     ON p.id = hp.product_id 
                     WHERE 
-                    (p.title LIKE ${mysql.escape('%' + search + '%')}
+                    (p.name LIKE ${mysql.escape('%' + search + '%')}
                     OR p.description LIKE ${mysql.escape('%' + search + '%')})
                     ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
                     LIMIT ${productsPerPage}
@@ -84,7 +84,7 @@ class HotProductService {
                 let result = await this.mysqlDb.poolQuery(query)
 
                 if (result.affectedRows === 0) {
-                    return reject(`Delete product with id ${product_id} not sucessfully`)
+                    return reject(`This product with id ${product_id} is not hot product`)
                 }
                 await this.mysqlDb.commit()
                 return resolve(`Remove hot-product with id ${product_id} sucessfully`)

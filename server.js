@@ -6,6 +6,7 @@ const path = require('path');
 const swaggerUi = require('swagger-ui-express')
 const logger = require('./logger')
 const bodyParser = require('body-parser')
+const helmet = require('helmet')
 
 require('dotenv').config({path: path.join(__dirname, '.env')})
 const {verifyToken,adminRole} = require('./middleware/verifyToken')
@@ -16,6 +17,7 @@ app.use(morgan('combined', {
     stream: logger.stream
 }))
 app.use(cors())
+app.use(helmet())
 
 const backendRoute = express.Router();
 
@@ -24,10 +26,10 @@ const postApi = require('./apis/post/postApi');
 const productApi = require('./apis/product/productApi');
 const hotProductApi = require('./apis/hot_product/hotProductApi');
 const categoryApi = require('./apis/category/categoryApi');
+const tagApi = require('./apis/tag/tagApi');
 const mainCategoryApi = require('./apis/main_category/mainCategoryApi');
 const inquiryApi = require('./apis/inquiry/inquiryApi');
 const userApi = require('./apis/auth/userApi');
-const companyProfileApi = require('./apis/companyProfile/companyProfileApi');
 
 backendRoute.use('/', indexApi);
 backendRoute.use('/post',postApi);
@@ -37,10 +39,8 @@ backendRoute.use('/category',categoryApi);
 backendRoute.use('/main-category',mainCategoryApi);
 backendRoute.use('/inquiry',inquiryApi);
 backendRoute.use('/user',userApi);
-backendRoute.use('/company-profile',companyProfileApi);
-
+backendRoute.use('/tag',tagApi);
 app.use('/api', backendRoute);
-
 
 const swaggerDocument = require('./swagger.json');
 backendRoute.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
