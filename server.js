@@ -6,7 +6,6 @@ const path = require('path');
 const swaggerUi = require('swagger-ui-express')
 const logger = require('./logger')
 const bodyParser = require('body-parser')
-const helmet = require('helmet')
 
 require('dotenv').config({path: path.join(__dirname, '.env')})
 const {verifyToken,adminRole} = require('./middleware/verifyToken')
@@ -17,7 +16,7 @@ app.use(morgan('combined', {
     stream: logger.stream
 }))
 app.use(cors())
-app.use(helmet())
+// app.use(helmet())
 
 const backendRoute = express.Router();
 
