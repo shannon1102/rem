@@ -4372,3 +4372,241 @@
 2021-09-03T11:29:17+07:00 info: '::1 - - [03/Sep/2021:04:29:17 +0000] "GET /api/main-category/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-03T11:29:49+07:00 info: '::1 - - [03/Sep/2021:04:29:49 +0000] "GET /api/product/ HTTP/1.1" 200 649 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-03T11:30:06+07:00 info: '::1 - - [03/Sep/2021:04:30:06 +0000] "GET /api/product/get-by-slug/new-product-1630642458399 HTTP/1.1" 200 422 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:11:40+07:00 info: '::1 - - [03/Sep/2021:10:11:40 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:11:40+07:00 info: '::1 - - [03/Sep/2021:10:11:40 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:11:40+07:00 info: '::1 - - [03/Sep/2021:10:11:40 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:11:40+07:00 info: '::1 - - [03/Sep/2021:10:11:40 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:11:40+07:00 info: '::1 - - [03/Sep/2021:10:11:40 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:12:01+07:00 info: '::1 - - [03/Sep/2021:10:12:01 +0000] "GET /api/main-category/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:20:23+07:00 error: "[MainCategoryService][getListSubCatergories] errors:  ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', `name` = 'Rèm Vải Trong Nhà', `description` = 'string', `url_image` = 'str' at line 2"
+2021-09-03T17:20:23+07:00 info: '::1 - - [03/Sep/2021:10:20:23 +0000] "GET /api/main-category/ HTTP/1.1" 500 253 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:21:31+07:00 error: "[MainCategoryService][getListSubCatergories] errors:  ER_BAD_FIELD_ERROR: Unknown column 'main_categpry_id' in 'where clause'"
+2021-09-03T17:21:31+07:00 info: '::1 - - [03/Sep/2021:10:21:31 +0000] "GET /api/main-category/ HTTP/1.1" 500 78 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:21:47+07:00 info: '::1 - - [03/Sep/2021:10:21:47 +0000] "GET /api/main-category/ HTTP/1.1" 200 669 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:22:21+07:00 info: '::1 - - [03/Sep/2021:10:22:21 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:23:02+07:00 info: '::1 - - [03/Sep/2021:10:23:02 +0000] "POST /api/category/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:23:08+07:00 info: '::1 - - [03/Sep/2021:10:23:08 +0000] "GET /api/main-category/ HTTP/1.1" 200 844 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:24:46+07:00 info: '::1 - - [03/Sep/2021:10:24:46 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:24:46+07:00 info: '::1 - - [03/Sep/2021:10:24:46 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:24:46+07:00 info: '::1 - - [03/Sep/2021:10:24:46 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:24:46+07:00 info: '::1 - - [03/Sep/2021:10:24:46 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:24:46+07:00 info: '::1 - - [03/Sep/2021:10:24:46 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:35:59+07:00 info: '::1 - - [03/Sep/2021:10:35:59 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:35:59+07:00 info: '::1 - - [03/Sep/2021:10:35:59 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:35:59+07:00 info: '::1 - - [03/Sep/2021:10:35:59 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:35:59+07:00 info: '::1 - - [03/Sep/2021:10:35:59 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 67331 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:35:59+07:00 info: '::1 - - [03/Sep/2021:10:35:59 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:36:00+07:00 info: '::1 - - [03/Sep/2021:10:36:00 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:22+07:00 info: '::1 - - [03/Sep/2021:10:38:22 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:22+07:00 info: '::1 - - [03/Sep/2021:10:38:22 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 69080 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:22+07:00 info: '::1 - - [03/Sep/2021:10:38:22 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:22+07:00 info: '::1 - - [03/Sep/2021:10:38:22 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:22+07:00 info: '::1 - - [03/Sep/2021:10:38:22 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:23+07:00 info: '::1 - - [03/Sep/2021:10:38:23 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T17:38:27+07:00 info: '::1 - - [03/Sep/2021:10:38:27 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:04:10+07:00 error: 'uncaughtException: missing ) after argument list\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:524\n' +
+  '    }\n' +
+  '    ^\n' +
+  '\n' +
+  'SyntaxError: missing ) after argument list\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:04:17+07:00 error: 'uncaughtException: missing ) after argument list\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:525\n' +
+  '    }\n' +
+  '    ^\n' +
+  '\n' +
+  'SyntaxError: missing ) after argument list\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:04:23+07:00 error: 'uncaughtException: missing ) after argument list\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:524\n' +
+  '    }\n' +
+  '    ^\n' +
+  '\n' +
+  'SyntaxError: missing ) after argument list\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:05:33+07:00 error: 'uncaughtException: Invalid or unexpected token\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:526\n' +
+  "        return returnList'\n" +
+  '                         ^\n' +
+  '\n' +
+  'SyntaxError: Invalid or unexpected token\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:11:21+07:00 info: '::1 - - [03/Sep/2021:11:11:21 +0000] "GET /api/product/ HTTP/1.1" 200 761 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:11:33+07:00 info: '::1 - - [03/Sep/2021:11:11:33 +0000] "GET /api/product/?orderType=2 HTTP/1.1" 200 761 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:11:39+07:00 info: '::1 - - [03/Sep/2021:11:11:39 +0000] "GET /api/product/?orderType=1 HTTP/1.1" 200 761 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:17:55+07:00 info: '::1 - - [03/Sep/2021:11:17:55 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:18:11+07:00 info: '::1 - - [03/Sep/2021:11:18:11 +0000] "GET /api/product/get-by-category-id/15 HTTP/1.1" 200 761 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:18:16+07:00 info: '::1 - - [03/Sep/2021:11:18:16 +0000] "GET /api/product/get-by-category-id/15?productsPerPage=1 HTTP/1.1" 200 403 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:22:58+07:00 error: "uncaughtException: Identifier 'err' has already been declared\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:145\n' +
+  '                let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))\n' +
+  '                     ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'err' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:23:11+07:00 error: "uncaughtException: Identifier 'err' has already been declared\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:145\n' +
+  '                let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))\n' +
+  '                     ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'err' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:23:13+07:00 error: "uncaughtException: Identifier 'err' has already been declared\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:145\n' +
+  '                let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))\n' +
+  '                     ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'err' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:23:48+07:00 info: '::1 - - [03/Sep/2021:11:23:48 +0000] "GET /api/product/get-by-main-category-id/4 HTTP/1.1" 200 981 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:24:34+07:00 info: '::1 - - [03/Sep/2021:11:24:34 +0000] "GET /api/product/get-by-main-category-id/4 HTTP/1.1" 200 761 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:27:44+07:00 info: '::1 - - [03/Sep/2021:11:27:44 +0000] "GET /api/category/ HTTP/1.1" 200 385 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:28:59+07:00 info: '::1 - - [03/Sep/2021:11:28:59 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:28:59+07:00 info: '::1 - - [03/Sep/2021:11:28:59 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:28:59+07:00 info: '::1 - - [03/Sep/2021:11:28:59 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 69079 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:28:59+07:00 info: '::1 - - [03/Sep/2021:11:28:59 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:28:59+07:00 info: '::1 - - [03/Sep/2021:11:28:59 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:29:00+07:00 info: '::1 - - [03/Sep/2021:11:29:00 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:29:07+07:00 info: '::1 - - [03/Sep/2021:11:29:07 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 404 202 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:30:17+07:00 error: '500 - category_id is not defined - /api/product/get-by-category-slug/new-sub-category-1630664582497 -GET - ::1'
+2021-09-03T18:30:17+07:00 info: '::1 - - [03/Sep/2021:11:30:17 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:30:18+07:00 error: '500 - category_id is not defined - /api/product/get-by-category-slug/new-sub-category-1630664582497 -GET - ::1'
+2021-09-03T18:30:18+07:00 info: '::1 - - [03/Sep/2021:11:30:18 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:30:18+07:00 error: '500 - category_id is not defined - /api/product/get-by-category-slug/new-sub-category-1630664582497 -GET - ::1'
+2021-09-03T18:30:18+07:00 info: '::1 - - [03/Sep/2021:11:30:18 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:30:19+07:00 error: '500 - category_id is not defined - /api/product/get-by-category-slug/new-sub-category-1630664582497 -GET - ::1'
+2021-09-03T18:30:19+07:00 info: '::1 - - [03/Sep/2021:11:30:19 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:33:08+07:00 error: '500 - category_id is not defined - /api/product/get-by-category-slug/new-sub-category-1630664582497 -GET - ::1'
+2021-09-03T18:33:08+07:00 info: '::1 - - [03/Sep/2021:11:33:08 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:33:09+07:00 error: '500 - category_id is not defined - /api/product/get-by-category-slug/new-sub-category-1630664582497 -GET - ::1'
+2021-09-03T18:33:09+07:00 info: '::1 - - [03/Sep/2021:11:33:09 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:38:28+07:00 info: '::1 - - [03/Sep/2021:11:38:28 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 200 44 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:38:34+07:00 info: '::1 - - [03/Sep/2021:11:38:34 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:38:35+07:00 info: '::1 - - [03/Sep/2021:11:38:35 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:38:50+07:00 info: '::1 - - [03/Sep/2021:11:38:50 +0000] "GET /api/category/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:39:19+07:00 info: '::1 - - [03/Sep/2021:11:39:19 +0000] "GET /api/product/get-by-category-slug/sub-category-1630641845645 HTTP/1.1" 200 761 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:39:47+07:00 info: '::1 - - [03/Sep/2021:11:39:47 +0000] "GET /api/product/get-by-category-id/15 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:40:17+07:00 info: '::1 - - [03/Sep/2021:11:40:17 +0000] "GET /api/product/get-by-category-id/15 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:40:30+07:00 info: '::1 - - [03/Sep/2021:11:40:30 +0000] "GET /api/product/get-by-slug/new-product-1630642458399 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:41:00+07:00 info: '::1 - - [03/Sep/2021:11:41:00 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:41:34+07:00 info: '::1 - - [03/Sep/2021:11:41:34 +0000] "PUT /api/product/16 HTTP/1.1" 200 54 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:41:51+07:00 info: '::1 - - [03/Sep/2021:11:41:51 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:42:12+07:00 error: '[productService][updateProduct] errors:  ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-09-03T18:42:12+07:00 info: '::1 - - [03/Sep/2021:11:42:12 +0000] "PUT /api/product/66 HTTP/1.1" 500 727 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:42:32+07:00 error: '[productService][updateProduct] errors:  ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-09-03T18:42:32+07:00 info: '::1 - - [03/Sep/2021:11:42:32 +0000] "PUT /api/product/66 HTTP/1.1" 500 727 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:42:38+07:00 error: '[productService][updateProduct] errors:  ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-09-03T18:42:38+07:00 info: '::1 - - [03/Sep/2021:11:42:38 +0000] "PUT /api/product/66 HTTP/1.1" 500 727 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:42:50+07:00 info: '::1 - - [03/Sep/2021:11:42:50 +0000] "PUT /api/product/66 HTTP/1.1" 200 54 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:43:03+07:00 error: '[productService][updateProduct] errors:  ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-09-03T18:43:03+07:00 info: '::1 - - [03/Sep/2021:11:43:03 +0000] "PUT /api/product/66 HTTP/1.1" 500 728 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:43:13+07:00 info: '::1 - - [03/Sep/2021:11:43:13 +0000] "PUT /api/product/66 HTTP/1.1" 200 54 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:43:21+07:00 info: '::1 - - [03/Sep/2021:11:43:21 +0000] "GET /api/product/ HTTP/1.1" 200 754 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-03T18:45:11+07:00 error: "uncaughtException: Identifier 'result1' has already been declared\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:490\n' +
+  '                const [err1, result1] = await to(this.mysqlDb.poolQuery(query1))\n' +
+  '                             ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'result1' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:45:18+07:00 error: "uncaughtException: Identifier 'result1' has already been declared\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:490\n' +
+  '                const [err1, result1] = await to(this.mysqlDb.poolQuery(query1))\n' +
+  '                             ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'result1' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-03T18:46:15+07:00 info: '::1 - - [03/Sep/2021:11:46:15 +0000] "PUT /api/product/90 HTTP/1.1" 500 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:16+07:00 info: '::1 - - [04/Sep/2021:17:41:16 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:16+07:00 info: '::1 - - [04/Sep/2021:17:41:16 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 69084 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:16+07:00 info: '::1 - - [04/Sep/2021:17:41:16 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:16+07:00 info: '::1 - - [04/Sep/2021:17:41:16 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:16+07:00 info: '::1 - - [04/Sep/2021:17:41:16 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:17+07:00 info: '::1 - - [04/Sep/2021:17:41:17 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:41:23+07:00 info: '::1 - - [04/Sep/2021:17:41:23 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:43:05+07:00 info: '::1 - - [04/Sep/2021:17:43:05 +0000] "GET /api/product/ HTTP/1.1" 200 796 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:43:39+07:00 info: '::1 - - [04/Sep/2021:17:43:39 +0000] "GET /api/product/get-by-category-id/15 HTTP/1.1" 200 422 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:43:55+07:00 info: '::1 - - [04/Sep/2021:17:43:55 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-05T00:44:06+07:00 info: '::1 - - [04/Sep/2021:17:44:06 +0000] "GET /api/hot-product/ HTTP/1.1" 200 363 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'

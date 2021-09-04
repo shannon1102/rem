@@ -24,13 +24,6 @@ class MainCategoryService {
             } else {
                 orderByDb = 'DESC'
             }
-            // const query0 = `
-            //     SELECT * FROM category
-            //     WHERE main_category_id = ${mysql.escape(id)} 
-            // `
-            // console.log(query);
-            // let [err, result] = await to(this.mysqlDb.poolQuery(query))
-
             const query = `
                 SELECT * FROM main_category
                 ORDER BY create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -39,6 +32,19 @@ class MainCategoryService {
             `
             console.log(query);
             let [err, result] = await to(this.mysqlDb.poolQuery(query))
+            console.log(result);
+            for(let i= 0;i<result.length; i++){
+                let mainCategoryId = result[i].id;
+                let query2=`SELECT * FROM category
+                WHERE main_category_id = ${mysql.escape(mainCategoryId)}`
+                let [err, result2] = await to(this.mysqlDb.poolQuery(query2))
+
+                if (err) {
+                    logger.error(`[MainCategoryService][getListSubCatergories] errors: `, err)
+                    return reject(err?.sqlMessage ? err.sqlMessage : err)
+                }
+                result[i].list_sub_categories = result2;    
+            }
             if (err) {
                 logger.error(`[MainCategoryService][getMainCatergories] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)

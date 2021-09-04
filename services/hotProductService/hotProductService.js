@@ -14,7 +14,7 @@ class HotProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 100
+                productsPerPage = productsPerPage ? productsPerPage : 10000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 if (orderType == orderTypeSetting.ASC) {

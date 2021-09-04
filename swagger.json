@@ -498,6 +498,70 @@
         }
       }
     },
+    "/product/get-by-category-slug/{slug}": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "slug",
+            "type": "string",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "productsPerPage",
+            "in": "query",
+            "description": "Max products can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "for search request for Front End",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get Products By Category Slug",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
     "/product/get-by-main-category-id/{id}": {
       "get": {
         "consumes": [
@@ -562,7 +626,7 @@
         }
       }
     },
-    "/product/get-by-main-category-name/{name}": {
+    "/product/get-by-main-category-slug/{slug}": {
       "get": {
         "consumes": [
           "application/json"
@@ -572,7 +636,7 @@
         ],
         "parameters": [
           {
-            "name": "name",
+            "name": "slug",
             "type": "string",
             "in": "path",
             "required": true
@@ -605,79 +669,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Products By Main Category Name",
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "success",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/product"
-              }
-            }
-          },
-          "500": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/error"
-            }
-          }
-        }
-      }
-    },
-    "/product/get-by-category-name/": {
-      "get": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "main_category",
-            "type": "string",
-            "in": "query",
-            "description": "main category name",
-            "required": true
-          },
-          {
-            "name": "category",
-            "type": "string",
-            "in": "query",
-            "description": "category name",
-            "required": true
-          },
-          {
-            "name": "productsPerPage",
-            "in": "query",
-            "description": "Max products can be display in one page",
-            "required": false
-          },
-          {
-            "name": "pageNumber",
-            "in": "query",
-            "description": "Page number",
-            "required": false
-          },
-          {
-            "name": "orderType",
-            "in": "query",
-            "description": "Order type to display: 1-oldest 2-newest ",
-            "required": false
-          },
-          {
-            "name": "search",
-            "in": "query",
-            "description": "for search request for Front End",
-            "required": false
-          }
-        ],
-        "tags": [
-          "Product Api"
-        ],
-        "summary": "Get Products By Category",
+        "summary": "Get Products By Main Category Slug",
         "description": "",
         "responses": {
           "200": {
@@ -799,37 +791,6 @@
               "items": {
                 "$ref": "#/definitions/product"
               }
-            }
-          },
-          "500": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/error"
-            }
-          }
-        }
-      }
-    },
-    "/product/get-all-material/list/": {
-      "get": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-        ],
-        "tags": [
-          "Product Api"
-        ],
-        "summary": "Get List Material",
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "success",
-            "schema": {
-              "$ref": "#/definitions/success"
             }
           },
           "500": {
@@ -1083,140 +1044,6 @@
             "description": "success",
             "schema": {
               "$ref": "#/definitions/product"
-            }
-          },
-          "500": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/error"
-            }
-          }
-        }
-      }
-    },
-
-   
-    "/product/update-image/{product_id}": {
-      "put": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "x-access-token",
-            "in": "header",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "product_id",
-            "type": "integer",
-            "in": "path",
-            "description": "ID of product",
-            "required": true
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "url_image1": {
-                  "type": "string"
-                },
-                "url_image2": {
-                  "type": "string"
-                },
-                "url_image3": {
-                  "type": "string"
-                },
-                "url_image4": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        ],
-        "tags": [
-          "Product Api"
-        ],
-        "summary": "Update Product Image by Product_ID",
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "success",
-            "schema": {
-              "$ref": "#/definitions/success"
-            }
-          },
-          "500": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/error"
-            }
-          }
-        }
-      }
-    },
-    "/product/upload-image/{product_id}": {
-      "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "x-access-token",
-            "in": "header",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "product_id",
-            "type": "integer",
-            "in": "path",
-            "description": "ID of product",
-            "required": true
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "url_image1": {
-                  "type": "string"
-                },
-                "url_image2": {
-                  "type": "string"
-                },
-                "url_image3": {
-                  "type": "string"
-                },
-                "url_image4": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        ],
-        "tags": [
-          "Product Api"
-        ],
-        "summary": "Updload Product Image by Product_ID",
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "success",
-            "schema": {
-              "$ref": "#/definitions/success"
             }
           },
           "500": {
@@ -2637,7 +2464,6 @@
         }
       }
     }
-
   },
   "definitions": {
     "post": {

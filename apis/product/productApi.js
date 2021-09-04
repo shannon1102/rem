@@ -50,6 +50,20 @@ productApi.get('/get-by-category-id/:category_id', (req, res, next) => {
         })
 
 })
+productApi.get('/get-by-category-slug/:slug', (req, res, next) => {
+
+    let { slug } = req.params
+    let { productsPerPage, pageNumber, orderType, search } = req.query;
+    productService
+        .getProductsByCategorySlug(slug, productsPerPage, pageNumber, orderType, search)
+        .then(listProduct => {
+            return res.status(200).json({ status: 200, message: "Success", data: listProduct })
+        })
+        .catch(err => {
+            return res.status(500).json({ status: 500, message: err })
+        })
+
+})
 
 productApi.get('/get-by-category-and-material/', (req, res, next) => {
 
@@ -66,11 +80,13 @@ productApi.get('/get-by-category-and-material/', (req, res, next) => {
 
 })
 
-productApi.get('/get-by-category-name/', checkRequiredFieldInQuery(['main_category', 'category']), (req, res, next) => {
+productApi.get('/get-by-main-category-id/:id', (req, res, next) => {
 
-    let { main_category, category, productsPerPage, pageNumber, orderType, search } = req.query;
+    let { id } = req.params
+    console.log(id);
+    let { productsPerPage, pageNumber, orderType, search } = req.query;
     productService
-        .getProductsByCategoryName(main_category, category, productsPerPage, pageNumber, orderType, search)
+        .getProductsByMainCategoryId(id, productsPerPage, pageNumber, orderType, search)
         .then(listProduct => {
             return res.status(200).json({ status: 200, message: "Success", data: listProduct })
         })
@@ -79,13 +95,13 @@ productApi.get('/get-by-category-name/', checkRequiredFieldInQuery(['main_catego
         })
 
 })
-productApi.get('/get-by-main-category-id/:id', (req, res, next) => {
+productApi.get('/get-by-main-category-slug/:slug', (req, res, next) => {
 
-    let { id } = req.params
+    let { slug } = req.params
     console.log(id);
     let { productsPerPage, pageNumber, orderType, search } = req.query;
     productService
-        .getProductsByMainCategoryId(id, productsPerPage, pageNumber, orderType, search)
+        .getProductsByMainCategorySlug(slug, productsPerPage, pageNumber, orderType, search)
         .then(listProduct => {
             return res.status(200).json({ status: 200, message: "Success", data: listProduct })
         })
