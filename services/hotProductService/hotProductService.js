@@ -23,8 +23,10 @@ class HotProductService {
                     orderByDb = 'DESC'
                 }
                 const query =
-                    `SELECT p.* FROM product as p  JOIN hot_product as hp
-                    ON p.id = hp.product_id 
+                    `SELECT p.*,pi.*,c.main_category_id FROM product as p  
+                    JOIN hot_product as hp ON p.id = hp.product_id
+                    JOIN product_image as pi ON pi.product_id = p.id
+                    JOIN category as c ON c.id = p.category_id    
                     WHERE 
                     (p.name LIKE ${mysql.escape('%' + search + '%')}
                     OR p.description LIKE ${mysql.escape('%' + search + '%')})
@@ -37,7 +39,7 @@ class HotProductService {
                     logger.error(`[hotProductService][getHotProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(listProduct)
+                    return resolve(this.returnListProduct(listProduct))
                 }
 
             });
@@ -94,6 +96,52 @@ class HotProductService {
                 return reject(err.sqlMessage)
             }
         })
+    }
+    returnProduct = (e) => {
+        return {
+            "id": e.id,
+            "name": e.name,
+            "description": e.description,
+            "model_number": e.model_number,
+            "brand": e.brand,
+            "origin": e.origin,
+            "thickness": e.thickness,
+            "price": e.price,
+            "material": e.material,
+            "size": e.size,
+            "category_id": e.category_id,
+            "main_category_id": e.main_category_id,
+            "slug": e.slug,
+            "create_at": e.create_at,
+            "update_at": e.update_at,
+            "list_product_images": [e.url_image1, e.url_image2, e.url_image3, e.url_image4,
+            e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
+        }
+    }
+    returnListProduct = (listProduct) => {
+        const returnList = listProduct.map(e => {
+            return {
+                "id": e.id,
+                "name": e.name,
+                "description": e.description,
+                "model_number": e.model_number,
+                "brand": e.brand,
+                "origin": e.origin,
+                "thickness": e.thickness,
+                "price": e.price,
+                "material": e.material,
+                "size": e.size,
+                "category_id": e.category_id,
+                "main_category_id": e.main_category_id,
+                "slug": e.slug,
+                "create_at": e.create_at,
+                "update_at": e.update_at,
+                "list_product_images": [e.url_image1, e.url_image2, e.url_image3, e.url_image4, e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
+            }
+        }
+        )
+        return returnList;
+
     }
 }
 
