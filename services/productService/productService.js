@@ -186,6 +186,7 @@ class ProductService {
 
                 let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
                 console.log(query)
+                consolo.log(listProduct)
                 if (err) {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
@@ -269,7 +270,7 @@ class ProductService {
             }
 
             console.log(productResult[0])
-            return resolve(productResult[0])
+            return resolve(this.returnProduct(productResult[0]))
         })
     }
     getProductBySlug(slug) {
@@ -296,7 +297,7 @@ class ProductService {
                     return reject(`product with id ${slug} not found`)
                 }
                 console.log(productResult[0])
-                return resolve(returnProduct(productResult[0]))
+                return resolve(this.returnProduct(productResult[0]))
 
             } catch (error) {
                 logger.error(error);
@@ -501,7 +502,8 @@ class ProductService {
                 "slug": e.slug,
                 "create_at": e.create_at,
                 "update_at": e.update_at,
-                "list_product_images": [e.url_image1, e.url_image2, e.url_image3, e.url_image4, e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
+                "list_product_images": [e.url_image1, e.url_image2, e.url_image3,e.url_image4,
+                     e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
             }
         }
         )
