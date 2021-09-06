@@ -20,6 +20,18 @@ productApi.get('/', (req, res, next) => {
         })
 
 })
+productApi.get('/product-image/lib', (req, res, next) => {
+    let { productsPerPage, pageNumber, orderType, search } = req.query;
+    productService
+        .getLibProductImages(productsPerPage, pageNumber, orderType, search)
+        .then(listProduct => {
+            return res.status(200).json({ status: 200, message: "Success", data: listProduct })
+        })
+        .catch(err => {
+            return res.status(500).json({ status: 500, message: err })
+        })
+
+})
 productApi.get('/get-by-category-id/:category_id', (req, res, next) => {
 
     let { category_id } = req.params

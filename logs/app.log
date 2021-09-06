@@ -4639,3 +4639,61 @@
 2021-09-06T09:25:42+07:00 info: '::1 - - [06/Sep/2021:02:25:42 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-06T09:25:50+07:00 info: '::1 - - [06/Sep/2021:02:25:50 +0000] "GET /api/product/66 HTTP/1.1" 200 415 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-06T09:26:09+07:00 info: '::1 - - [06/Sep/2021:02:26:09 +0000] "GET /api/product/get-by-slug/new-product-1630642458399 HTTP/1.1" 200 415 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:03+07:00 info: '::1 - - [06/Sep/2021:02:51:03 +0000] "GET /api/api-docs/ HTTP/1.1" 200 3104 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:03+07:00 info: '::1 - - [06/Sep/2021:02:51:03 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 70660 "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:03+07:00 info: '::1 - - [06/Sep/2021:02:51:03 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:03+07:00 info: '::1 - - [06/Sep/2021:02:51:03 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:03+07:00 info: '::1 - - [06/Sep/2021:02:51:03 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:03+07:00 info: '::1 - - [06/Sep/2021:02:51:03 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:12+07:00 info: '::1 - - [06/Sep/2021:02:51:12 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:13+07:00 info: '::1 - - [06/Sep/2021:02:51:13 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:13+07:00 info: '::1 - - [06/Sep/2021:02:51:13 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:13+07:00 info: '::1 - - [06/Sep/2021:02:51:13 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:51:13+07:00 info: '::1 - - [06/Sep/2021:02:51:13 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:1237/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:54:50+07:00 info: '::1 - - [06/Sep/2021:02:54:50 +0000] "GET /api/product/product-image/lib HTTP/1.1" 200 68 "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:54:51+07:00 info: '::1 - - [06/Sep/2021:02:54:51 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:54:52+07:00 info: '::1 - - [06/Sep/2021:02:54:52 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:55:05+07:00 info: '::1 - - [06/Sep/2021:02:55:05 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:55:55+07:00 info: '::1 - - [06/Sep/2021:02:55:55 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:56:10+07:00 info: '::1 - - [06/Sep/2021:02:56:10 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:57:16+07:00 info: '::1 - - [06/Sep/2021:02:57:16 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:57:22+07:00 info: '::1 - - [06/Sep/2021:02:57:22 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:57:59+07:00 info: '::1 - - [06/Sep/2021:02:57:59 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:58:00+07:00 info: '::1 - - [06/Sep/2021:02:58:00 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:58:00+07:00 info: '::1 - - [06/Sep/2021:02:58:00 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:58:29+07:00 info: '::1 - - [06/Sep/2021:02:58:29 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T09:59:12+07:00 info: '::1 - - [06/Sep/2021:02:59:12 +0000] "GET /api/product/product-image/lib HTTP/1.1" 304 - "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T10:01:06+07:00 error: 'uncaughtException: Unexpected string\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:424\n' +
+  '                if (!result0[0].numPr"main_category_slug": e.main_category_slug,oduct) {\n' +
+  '                                     ^^^^^^^^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Unexpected string\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-06T10:01:07+07:00 error: 'uncaughtException: Unexpected string\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:424\n' +
+  '                if (!result0[0].numPr"main_category_slug": e.main_category_slug,oduct) {\n' +
+  '                                     ^^^^^^^^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Unexpected string\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-06T10:02:22+07:00 info: '::1 - - [06/Sep/2021:03:02:22 +0000] "GET /api/product/product-image/lib HTTP/1.1" 200 531 "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-06T10:03:40+07:00 info: '::1 - - [06/Sep/2021:03:03:40 +0000] "GET /api/product/product-image/lib HTTP/1.1" 200 627 "http://localhost:1237/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'

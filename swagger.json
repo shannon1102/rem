@@ -434,6 +434,64 @@
         }
       }
     },
+    "/product/product-image/lib": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productsPerPage",
+            "in": "query",
+            "description": "Max products can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "for search request for Front End",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get Lib Image",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
     "/product/get-by-category-id/{category_id}": {
       "get": {
         "consumes": [

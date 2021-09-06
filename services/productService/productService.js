@@ -56,6 +56,56 @@ class ProductService {
 
             });
     }
+    getLibProductImages(productsPerPage, pageNumber, orderType, search) {
+        return new Promise(
+            async (resolve, reject) => {
+                let offsetDb = 0, orderByDb;
+                orderType = orderType ? orderType : 2   
+                pageNumber = pageNumber ? pageNumber : 1
+                productsPerPage = productsPerPage ? productsPerPage : 10000
+                offsetDb = productsPerPage * (pageNumber - 1)
+                // search = search ? search : ""
+                let stringSearch = ''
+                if (search) {
+                    stringSearch = search.split(' ').map(element => {
+                        return `p.name LIKE ${mysql.escape('%' + element + '%')} OR p.description LIKE ${mysql.escape('%' + element + '%')} 
+                        OR p.model_number LIKE ${mysql.escape('%' + element + '%')}`
+                    }).join(' OR ')
+                    console.log(stringSearch);
+                } else {
+                    stringSearch = `p.name LIKE ${mysql.escape('%' + "" + '%')} OR p.description LIKE ${mysql.escape('%' + "" + '%')} 
+                    OR p.model_number LIKE ${mysql.escape('%' + "" + '%')}`
+                }
+                if (orderType == orderTypeSetting.ASC) {
+                    orderByDb = 'ASC'
+                } else {
+                    orderByDb = 'DESC'
+                }
+
+                const query =
+                    `SELECT p.*,c.main_category_id,mc.name as main_category_name,mc.slug as main_category_slug,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
+                    pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
+                    FROM product as p
+                    JOIN product_image AS pi ON p.id = pi.product_id
+                    JOIN category AS c ON c.id = p.category_id
+                    JOIN main_category AS mc ON mc.id = c.main_category_id
+                    WHERE ${stringSearch}
+                    ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+                    LIMIT ${productsPerPage}
+                    OFFSET ${mysql.escape(offsetDb)}`
+                console.log(query)
+                let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
+                console.log(listProduct)
+                let listProductImgsReturn = this.returnLibProductImages(listProduct)
+                if (err) {
+                    logger.error(`[productService][getProducts] errors : `, err)
+                    return reject(err)
+                } else {
+                    return resolve(listProductImgsReturn)
+                }
+
+            });
+    }
     getProductsByCategoryId(category_id, productsPerPage, pageNumber, orderType, search) {
         return new Promise(
             async (resolve, reject) => {
@@ -509,6 +559,24 @@ class ProductService {
         )
         return returnList;
 
+    }
+    returnLibProductImages = (listProduct) => {
+        const returnList = listProduct.map(e => {
+        return {
+            "id": e.id,
+            "name": e.name,
+            "category_id": e.category_id,
+            "main_category_id": e.main_category_id,
+            "main_category_name": e.main_category_name,
+            "main_category_slug": e.main_category_slug,
+            "list_product_images": [e.url_image1, e.url_image2, e.url_image3, e.url_image4,
+            e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0)),
+            "create_at": e.create_at,
+            "update_at": e.update_at
+        }
+        }
+    )
+    return returnList
     }
 }
 
