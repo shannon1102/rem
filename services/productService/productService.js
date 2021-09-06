@@ -359,7 +359,7 @@ class ProductService {
         })
     }
     createProduct(name, description, model_number, list_product_images, origin,
-        brand, thickness, price, material, size, category_id) {
+        brand, thickness, price, material,weight,feature,repeat_deg, size, category_id) {
         const slug = createSlug(name);
         console.log('slug', slug);
         const url_image1 = list_product_images[0] ? list_product_images[0] : null;
@@ -374,10 +374,10 @@ class ProductService {
             try {
                 await this.mysqlDb.beginTransaction()
                 const query = `INSERT INTO product(name,description,model_number,origin,
-                brand,thickness,price,material,size, category_id,slug) 
+                brand,thickness,price,material,weight,feature,repeat_deg,size, category_id,slug) 
             VALUES (${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(model_number)},
             ${mysql.escape(origin)},${mysql.escape(brand)},${mysql.escape(thickness)},
-            ${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
+            ${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(weight)},${mysql.escape(feature)},${mysql.escape(repeat_deg)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
             `
                 const [err0, result] = await to(this.mysqlDb.poolQuery(query))
                 if (err0) {
@@ -407,7 +407,7 @@ class ProductService {
         })
     }
     updateProduct(id, name, description, model_number, list_product_images, origin,
-        brand, thickness, price, material, size, category_id) {
+        brand, thickness, price, material,weight,feature,repeat_deg , size, category_id) {
         const url_image1 = list_product_images[0] ? list_product_images[0] : null;
         const url_image2 = list_product_images[1] ? list_product_images[1] : null;
         const url_image3 = list_product_images[2] ? list_product_images[2] : null;
@@ -434,6 +434,9 @@ class ProductService {
                thickness = ${mysql.escape(thickness)},
                price = ${mysql.escape(price)},
                material= ${mysql.escape(material)},
+               weight= ${mysql.escape(weight)},
+               feature= ${mysql.escape(feature)},
+               repeat_deg= ${mysql.escape(repeat_deg)},
                size= ${mysql.escape(size)},
                category_id = ${mysql.escape(category_id)}
                WHERE id = ${mysql.escape(id)}
@@ -524,6 +527,9 @@ class ProductService {
             "thickness": e.thickness,
             "price": e.price,
             "material": e.material,
+            "weight":e.weight,
+            "feature":e.feature,
+            "repeat_deg":e.repeat_deg,
             "size": e.size,
             "category_id": e.category_id,
             "main_category_id": e.main_category_id,
@@ -546,6 +552,9 @@ class ProductService {
                 "thickness": e.thickness,
                 "price": e.price,
                 "material": e.material,
+                "weight":e.weight,
+                "feature":e.feature,
+                "repeat_deg":e.repeat_deg,
                 "size": e.size,
                 "category_id": e.category_id,
                 "main_category_id": e.main_category_id,

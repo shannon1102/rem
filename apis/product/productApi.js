@@ -209,11 +209,11 @@ productApi.get('/get-all-brand/list/', (req, res, next) => {
 })
 productApi.post('/', verifyToken, adminRole, checkRequiredFieldInBody(['name', 'description', 'model_number', 'category_id']), (req, res, next) => {
     let { name, description, model_number, list_product_images, origin, brand,
-        thickness, price, material, size, category_id } = req.body
+        thickness, price, material,weight,feature,repeat_deg,size, category_id } = req.body
     console.log("sdadda", req.body)
     productService
         .createProduct(name, description, model_number, list_product_images, origin,
-            brand,thickness, price, material, size, category_id)
+            brand,thickness, price, material,weight,feature,repeat_deg, size, category_id)
         .then(result => {
             return res.status(200).json({
                 status: 200,
@@ -246,11 +246,11 @@ productApi.post('/upload-product-image/:id', verifyToken, adminRole, checkRequir
 productApi.put('/:id', verifyToken, adminRole, (req, res, next) => {
     let { id } = req.params
     let { name, description, model_number, list_product_images, origin, brand,
-        thickness, price, material, size, category_id } = req.body
+        thickness, price, material,weight,feature,repeat_deg, size, category_id } = req.body
     console.log(req.body)
     productService
         .updateProduct(id, name, description, model_number, list_product_images, origin, brand,
-            thickness, price, material, size, category_id)
+            thickness, price, material,weight,feature,repeat_deg, size, category_id)
         .then(result => {
             return res.status(200).json({
                 status: 200,

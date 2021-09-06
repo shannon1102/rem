@@ -398,6 +398,15 @@
                 "material": {
                   "type": "string"
                 },
+                "weight": {
+                  "type": "string"
+                },
+                "feature": {
+                  "type": "string"
+                },
+                "repeat_deg": {
+                  "type": "string"
+                },
                 "category_id": {
                   "type": "integer"
                 }
@@ -988,6 +997,15 @@
                   "type": "string"
                 },
                 "material": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "string"
+                },
+                "feature": {
+                  "type": "string"
+                },
+                "repeat_deg": {
                   "type": "string"
                 },
                 "category_id": {
@@ -2580,6 +2598,15 @@
           "type": "string"
         },
         "material": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "feature": {
+          "type": "string"
+        },
+        "repeat_deg": {
           "type": "string"
         },
         "category_id": {
