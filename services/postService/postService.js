@@ -2,6 +2,7 @@
 const mysql = require('mysql');
 const logger = require('../../logger');
 const {to} = require('../../helper/to');
+const {createSlug} = require('../../utils/index');
 class PostService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
@@ -57,6 +58,58 @@ class PostService {
             return resolve(postResult[0])
         })
     }
+    getPostBySlug(slug) {
+        return new Promise(async (resolve, reject) => {
+            const query = `
+                SELECT * FROM post WHERE slug = ${mysql.escape(slug)}
+            `
+
+            const [err, postResult] = await to(this.mysqlDb.poolQuery(query))
+            if (err) {
+                logger.error(`[postService][getPostById] errors: `, err)
+                return reject(err?.sqlMessage ? err.sqlMessage : err)
+            }
+            if (!postResult.length) {
+                return reject(`post with id ${id} not found`)
+            }
+            return resolve(postResult[0])
+        })
+    }
+    getPostByTagSlug(tag_slug) {    
+        return new Promise(async (resolve, reject) => {
+            const query = `
+                SELECT * FROM post
+                JOIN tag ON tag.id = post.id
+                WHERE tag.slug = ${mysql.escape(tag_slug)}
+            `
+            const [err, postResult] = await to(this.mysqlDb.poolQuery(query))
+            if (err) {
+                logger.error(`[postService][getPostByTagSlug] errors: `, err)
+                return reject(err?.sqlMessage ? err.sqlMessage : err)
+            }
+            if (!postResult.length) {
+                return reject(`post with tag slug ${tag_slug} not found`)
+            }
+            return resolve(postResult[0])
+        })
+    }
+    getPostByTagId(tag_id) {
+        return new Promise(async (resolve, reject) => {
+            const query = `
+                SELECT * FROM post WHERE tag_id = ${mysql.escape(tag_id)}
+            `
+
+            const [err, postResult] = await to(this.mysqlDb.poolQuery(query))
+            if (err) {
+                logger.error(`[postService][getPostByTagId] errors: `, err)
+                return reject(err?.sqlMessage ? err.sqlMessage : err)
+            }
+            if (!postResult.length) {
+                return reject(`post with tag id ${tag_id} not found`)
+            }
+            return resolve(postResult[0])
+        })
+    }
     getPostByTitle(title) {
         return new Promise(async (resolve, reject) => {
             const query = `
@@ -71,11 +124,12 @@ class PostService {
             return resolve(postResult)
         })
     }
-    createPost(title,image,description, content,category_id) {
+    createPost(title,url_image, content,tag_id) {
         return new Promise(async (resolve, reject) => {
+            const slug = createSlug(title); 
             const query = `
-                INSERT INTO post(title,image,description, content,category_id)
-                VALUES(${mysql.escape(title)},${mysql.escape(image)},${mysql.escape(description)},${mysql.escape(content)},${mysql.escape(category_id)})
+                INSERT INTO post(title,url_image, content,tag_id,slug)
+                VALUES(${mysql.escape(title)},${mysql.escape(url_image)},${mysql.escape(content)},${mysql.escape(tag_id)},${mysql.escape(slug)})
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -86,15 +140,14 @@ class PostService {
             return resolve(result?.insertId)
         })
     }
-    updatePost(id, title,image,description, content,category_id) {
+    updatePost(id, title,url_image,content,tag_id) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE post SET 
                 title = ${mysql.escape(title)},
-                description = ${mysql.escape(description)},
                 content = ${mysql.escape(content)},
-                image = ${mysql.escape(image)},
-                category_id = ${mysql.escape(category_id)}
+                url_image = ${mysql.escape(url_image)},
+                tag_id = ${mysql.escape(tag_id)}
                 WHERE id = ${mysql.escape(id)}
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
@@ -112,6 +165,11 @@ class PostService {
     deletePost(id) {
         return new Promise(async (resolve, reject) => {
             try {
+                // const query = `
+                //     SELECT image_cloud_id FROM post
+                //     WHERE id = ${mysql.escape(id)}
+                // `
+
                 const query = `
                     DELETE FROM post
                     WHERE id = ${mysql.escape(id)}

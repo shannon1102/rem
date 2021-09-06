@@ -377,7 +377,8 @@ class ProductService {
                 brand,thickness,price,material,weight,feature,repeat_deg,size, category_id,slug) 
             VALUES (${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(model_number)},
             ${mysql.escape(origin)},${mysql.escape(brand)},${mysql.escape(thickness)},
-            ${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(weight)},${mysql.escape(feature)},${mysql.escape(repeat_deg)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
+            ${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(weight)},
+            ${mysql.escape(feature)},${mysql.escape(repeat_deg)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
             `
                 const [err0, result] = await to(this.mysqlDb.poolQuery(query))
                 if (err0) {

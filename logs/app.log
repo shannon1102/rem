@@ -4764,3 +4764,40 @@
 2021-09-06T20:39:22+07:00 info: '::1 - - [06/Sep/2021:13:39:22 +0000] "GET /api/hot-product/ HTTP/1.1" 200 417 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-06T20:39:58+07:00 info: '::1 - - [06/Sep/2021:13:39:58 +0000] "GET /api/hot-product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-06T20:40:59+07:00 info: '::1 - - [06/Sep/2021:13:40:59 +0000] "GET /api/hot-product/ HTTP/1.1" 200 417 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:04:10+07:00 error: "uncaughtException: Cannot find module 'cloudinary'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/deploy/rem/utils/upLoadCloudinary.js\n' +
+  '- /home/dalang/deploy/rem/services/postService/postService.js\n' +
+  '- /home/dalang/deploy/rem/apis/post/postApi.js\n' +
+  '- /home/dalang/deploy/rem/server.js\n' +
+  '- /home/dalang/deploy/rem/index.js\n' +
+  "Error: Cannot find module 'cloudinary'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/deploy/rem/utils/upLoadCloudinary.js\n' +
+  '- /home/dalang/deploy/rem/services/postService/postService.js\n' +
+  '- /home/dalang/deploy/rem/apis/post/postApi.js\n' +
+  '- /home/dalang/deploy/rem/server.js\n' +
+  '- /home/dalang/deploy/rem/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/utils/upLoadCloudinary.js:1:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-09-07T02:06:27+07:00 info: '::1 - - [06/Sep/2021:19:06:27 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:06:27+07:00 info: '::1 - - [06/Sep/2021:19:06:27 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 73880 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:06:27+07:00 info: '::1 - - [06/Sep/2021:19:06:27 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:06:27+07:00 info: '::1 - - [06/Sep/2021:19:06:27 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:06:27+07:00 info: '::1 - - [06/Sep/2021:19:06:27 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:06:34+07:00 info: '::1 - - [06/Sep/2021:19:06:34 +0000] "GET /api/post/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:06:47+07:00 info: '::1 - - [06/Sep/2021:19:06:47 +0000] "GET /api/tag/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:07:18+07:00 info: '::1 - - [06/Sep/2021:19:07:18 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:07:49+07:00 info: '::1 - - [06/Sep/2021:19:07:49 +0000] "POST /api/post/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:08:03+07:00 info: '::1 - - [06/Sep/2021:19:08:03 +0000] "POST /api/post/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:08:13+07:00 info: '::1 - - [06/Sep/2021:19:08:13 +0000] "GET /api/post/ HTTP/1.1" 200 431 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:08:38+07:00 info: '::1 - - [06/Sep/2021:19:08:38 +0000] "GET /api/post/9 HTTP/1.1" 200 236 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T02:08:48+07:00 info: '::1 - - [06/Sep/2021:19:08:48 +0000] "GET /api/post/get-by-slug/first-post-1630955269123 HTTP/1.1" 200 234 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
