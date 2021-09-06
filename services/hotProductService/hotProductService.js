@@ -23,7 +23,7 @@ class HotProductService {
                     orderByDb = 'DESC'
                 }
                 const query =
-                    `SELECT p.*,pi.*,c.main_category_id FROM product as p  
+                    `SELECT p.*,pi.*,hp.product_id,c.main_category_id FROM product as p  
                     JOIN hot_product as hp ON p.id = hp.product_id
                     JOIN product_image as pi ON pi.product_id = p.id
                     JOIN category as c ON c.id = p.category_id    
@@ -34,12 +34,14 @@ class HotProductService {
                     LIMIT ${productsPerPage}
                     OFFSET ${mysql.escape(offsetDb)}`
                 console.log(query)
+                
                 let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
+                console.log(listProduct)
                 if (err) {
                     logger.error(`[hotProductService][getHotProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(this.returnListProduct(listProduct))
+                    return resolve(this.returnListHotProduct(listProduct))
                 }
 
             });
@@ -97,9 +99,9 @@ class HotProductService {
             }
         })
     }
-    returnProduct = (e) => {
+    returnHotProduct = (e) => {
         return {
-            "id": e.id,
+            "id": e.product_id,
             "name": e.name,
             "description": e.description,
             "model_number": e.model_number,
@@ -121,10 +123,10 @@ class HotProductService {
             e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
         }
     }
-    returnListProduct = (listProduct) => {
+    returnListHotProduct = (listProduct) => {
         const returnList = listProduct.map(e => {
             return {
-                "id": e.id,
+                "id": e.product_id,
                 "name": e.name,
                 "description": e.description,
                 "model_number": e.model_number,
