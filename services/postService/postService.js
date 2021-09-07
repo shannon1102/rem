@@ -75,12 +75,29 @@ class PostService {
             return resolve(postResult[0])
         })
     }
-    getPostByTagSlug(tag_slug) {    
+    getPostByTagSlug(tag_slug,postsPerPage, pageNumber, orderType) {    
         return new Promise(async (resolve, reject) => {
+            let offsetDb, orderByDb
+            orderType = orderType ? orderType : 'newest'
+            pageNumber = pageNumber ? pageNumber : 1
+            if (!postsPerPage) {
+                postsPerPage = 100
+                offsetDb = 0
+            } else {
+                offsetDb = postsPerPage * (pageNumber - 1)
+            }
+            if (orderType === 'oldest') {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
             const query = `
                 SELECT * FROM post
-                JOIN tag ON tag.id = post.id
+                JOIN tag ON tag.id = post.tag_id
                 WHERE tag.slug = ${mysql.escape(tag_slug)}
+                ORDER BY post.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+                LIMIT ${postsPerPage}
+                OFFSET ${mysql.escape(offsetDb)}
             `
             const [err, postResult] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -90,13 +107,30 @@ class PostService {
             if (!postResult.length) {
                 return reject(`post with tag slug ${tag_slug} not found`)
             }
-            return resolve(postResult[0])
+            return resolve(postResult)
         })
     }
-    getPostByTagId(tag_id) {
+    getPostByTagId(tag_id,postsPerPage, pageNumber, orderType) {
+        let offsetDb, orderByDb
+        orderType = orderType ? orderType : 'newest'
+        pageNumber = pageNumber ? pageNumber : 1
+        if (!postsPerPage) {
+            postsPerPage = 100
+            offsetDb = 0
+        } else {
+            offsetDb = postsPerPage * (pageNumber - 1)
+        }
+        if (orderType === 'oldest') {
+            orderByDb = 'ASC'
+        } else {
+            orderByDb = 'DESC'
+        }
         return new Promise(async (resolve, reject) => {
             const query = `
                 SELECT * FROM post WHERE tag_id = ${mysql.escape(tag_id)}
+                ORDER BY create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+                LIMIT ${postsPerPage}
+                OFFSET ${mysql.escape(offsetDb)}
             `
 
             const [err, postResult] = await to(this.mysqlDb.poolQuery(query))

@@ -45,7 +45,8 @@ postApi.get('/get-by-slug/:slug', async (req, res, next) => {
 postApi.get('/get-by-tag-id/:tag_id', async (req, res, next) => {
     try {
         let {tag_id} = req.params
-        const postFounded = await postService.getPostByTagId(tag_id)
+        let {postsPerPage, pageNumber, orderType} = req.query
+        const postFounded = await postService.getPostByTagId(tag_id,postsPerPage, pageNumber, orderType)
 
         return res.status(200).json({status:200,message:"Success",data:postFounded})
     } catch (error) {
@@ -65,7 +66,8 @@ postApi.get('/get-by-tag-name/:name', async (req, res, next) => {
 postApi.get('/get-by-tag-slug/:tag_slug', async (req, res, next) => {
     try {
         let {tag_slug} = req.params
-        const postFounded = await postService.getPostByTagSlug(tag_slug)
+        let {postsPerPage, pageNumber, orderType} = req.query
+        const postFounded = await postService.getPostByTagSlug(tag_slug,postsPerPage, pageNumber, orderType)
 
         return res.status(200).json({status:200,message:"Success",data:postFounded})
     } catch (error) {

@@ -20,12 +20,6 @@ const removeAccent = (str) => {
 }
 const createSlug = (str) => {
     let newStr = ''
-    // if(str.includes('[')){
-    //     newStr= str.substring(0, str.indexOf("["));
-    // }else{
-    //     newStr= str
-    // }
-    
     newStr = removeAccent(slugify(str, {
 
         replacement: '-', // replace spaces with replacement character, defaults to `-`

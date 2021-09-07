@@ -330,6 +330,24 @@
             "type": "integer",
             "in": "path",
             "required": true
+          },
+          {
+            "name": "postsPerPage",
+            "in": "query",
+            "description": "Max posts can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 'newest' or 'oldest' or null",
+            "required": false
           }
         ],
         "tags": [
@@ -367,6 +385,24 @@
             "type": "string",
             "in": "path",
             "required": true
+          },
+          {
+            "name": "postsPerPage",
+            "in": "query",
+            "description": "Max posts can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 'newest' or 'oldest' or null",
+            "required": false
           }
         ],
         "tags": [
