@@ -1,8 +1,8 @@
 'use strict'
 const mysql = require('mysql');
 const logger = require('../../logger');
-const {to} = require('../../helper/to');
-const {createSlug} = require('../../utils/index');
+const { to } = require('../../helper/to');
+const { createSlug } = require('../../utils/index');
 class PostService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
@@ -24,6 +24,10 @@ class PostService {
             } else {
                 orderByDb = 'DESC'
             }
+
+            const queryCounter = `SELECT COUNT(*) as total FROM post`;
+            const totalPostResult = await this.mysqlDb.poolQuery(queryCounter);
+            const total_post = totalPostResult[0].total;
             const query = `
                 SELECT * FROM post
                 ORDER BY create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -36,7 +40,7 @@ class PostService {
                 logger.error(`[postService][getPosts] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             } else {
-                return resolve(postsResult)
+                return resolve({ total: total_post, postsResult })
             }
 
         })
@@ -75,7 +79,7 @@ class PostService {
             return resolve(postResult[0])
         })
     }
-    getPostByTagSlug(tag_slug,postsPerPage, pageNumber, orderType) {    
+    getPostByTagSlug(tag_slug, postsPerPage, pageNumber, orderType) {
         return new Promise(async (resolve, reject) => {
             let offsetDb, orderByDb
             orderType = orderType ? orderType : 'newest'
@@ -91,6 +95,11 @@ class PostService {
             } else {
                 orderByDb = 'DESC'
             }
+            const queryCounter = `SELECT COUNT(*) as total FROM post
+            JOIN tag ON tag.id = post.tag_id
+            WHERE tag.slug = ${mysql.escape(tag_slug)}`;
+            const totalPostResult = await this.mysqlDb.poolQuery(queryCounter);
+            const total_post = totalPostResult[0].total;
             const query = `
                 SELECT * FROM post
                 JOIN tag ON tag.id = post.tag_id
@@ -99,33 +108,38 @@ class PostService {
                 LIMIT ${postsPerPage}
                 OFFSET ${mysql.escape(offsetDb)}
             `
-            const [err, postResult] = await to(this.mysqlDb.poolQuery(query))
+            const [err, postsResult] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
                 logger.error(`[postService][getPostByTagSlug] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             }
-            if (!postResult.length) {
+            if (!postsResult.length) {
                 return reject(`post with tag slug ${tag_slug} not found`)
             }
-            return resolve(postResult)
+            return resolve({ total: total_post, postsResult })
         })
     }
-    getPostByTagId(tag_id,postsPerPage, pageNumber, orderType) {
-        let offsetDb, orderByDb
-        orderType = orderType ? orderType : 'newest'
-        pageNumber = pageNumber ? pageNumber : 1
-        if (!postsPerPage) {
-            postsPerPage = 100
-            offsetDb = 0
-        } else {
-            offsetDb = postsPerPage * (pageNumber - 1)
-        }
-        if (orderType === 'oldest') {
-            orderByDb = 'ASC'
-        } else {
-            orderByDb = 'DESC'
-        }
+    getPostByTagId(tag_id, postsPerPage, pageNumber, orderType) {
         return new Promise(async (resolve, reject) => {
+            let offsetDb, orderByDb
+            orderType = orderType ? orderType : 'newest'
+            pageNumber = pageNumber ? pageNumber : 1
+            if (!postsPerPage) {
+                postsPerPage = 100
+                offsetDb = 0
+            } else {
+                offsetDb = postsPerPage * (pageNumber - 1)
+            }
+            if (orderType === 'oldest') {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
+            const queryCounter = `SELECT COUNT(*) as total FROM post
+            WHERE post.tag_id = ${mysql.escape(tag_id)}`;
+            const totalPostResult = await this.mysqlDb.poolQuery(queryCounter);
+            const total_post = totalPostResult[0].total;
+
             const query = `
                 SELECT * FROM post WHERE tag_id = ${mysql.escape(tag_id)}
                 ORDER BY create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -133,15 +147,15 @@ class PostService {
                 OFFSET ${mysql.escape(offsetDb)}
             `
 
-            const [err, postResult] = await to(this.mysqlDb.poolQuery(query))
+            const [err, postsResult] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
                 logger.error(`[postService][getPostByTagId] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             }
-            if (!postResult.length) {
+            if (!postsResult.length) {
                 return reject(`post with tag id ${tag_id} not found`)
             }
-            return resolve(postResult)
+            return resolve({total:total_post,postsResult})
         })
     }
     getPostByTitle(title) {
@@ -158,9 +172,9 @@ class PostService {
             return resolve(postResult)
         })
     }
-    createPost(title,url_image, content,tag_id) {
+    createPost(title, url_image, content, tag_id) {
         return new Promise(async (resolve, reject) => {
-            const slug = createSlug(title); 
+            const slug = createSlug(title);
             const query = `
                 INSERT INTO post(title,url_image, content,tag_id,slug)
                 VALUES(${mysql.escape(title)},${mysql.escape(url_image)},${mysql.escape(content)},${mysql.escape(tag_id)},${mysql.escape(slug)})
@@ -174,7 +188,7 @@ class PostService {
             return resolve(result?.insertId)
         })
     }
-    updatePost(id, title,url_image,content,tag_id) {
+    updatePost(id, title, url_image, content, tag_id) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE post SET 

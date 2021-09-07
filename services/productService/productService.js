@@ -33,7 +33,10 @@ class ProductService {
                 } else {
                     orderByDb = 'DESC'
                 }
-
+                const queryCounter = `SELECT COUNT(*) as total FROM product as p WHERE (${stringSearch})`;
+                console.log(queryCounter);
+                const countProductResult = await this.mysqlDb.poolQuery(queryCounter);
+                const total_product = countProductResult[0].total;
                 const query =
                     `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
                     pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
@@ -44,14 +47,13 @@ class ProductService {
                     ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
                     LIMIT ${productsPerPage}
                     OFFSET ${mysql.escape(offsetDb)}`
-                console.log(query)
                 let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
                 let listProductReturn = this.returnListProduct(listProduct)
                 if (err) {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(listProductReturn)
+                    return resolve({total: total_product,listProductReturn})
                 }
 
             });
@@ -130,6 +132,11 @@ class ProductService {
                 } else {
                     orderByDb = 'DESC'
                 }
+                const queryCounter = `SELECT COUNT(*) as total FROM product as p WHERE p.category_id = ${category_id} AND (${stringSearch})`;
+                console.log(queryCounter);
+                const countProductResult = await this.mysqlDb.poolQuery(queryCounter);
+                const total_product = countProductResult[0].total;
+
                 const query =
                 `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
                 pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
@@ -147,7 +154,8 @@ class ProductService {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(this.returnListProduct(listProduct))
+                    let listProductReturn = this.returnListProduct(listProduct)
+                    return resolve({total: total_product,listProductReturn})
                 }
 
             });
@@ -177,6 +185,13 @@ class ProductService {
                 } else {
                     orderByDb = 'DESC'
                 }
+
+                const queryCounter = `SELECT COUNT(*) as total FROM product as p
+                LEFT JOIN category as c ON c.id = p.category_id
+                WHERE c.slug = ${mysql.escape(slug)} AND (${stringSearch})`;
+                console.log(queryCounter);
+                const countProductResult = await this.mysqlDb.poolQuery(queryCounter);
+                const total_product = countProductResult[0].total;
                 const query =
                 `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
                 pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
@@ -193,7 +208,8 @@ class ProductService {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(this.returnListProduct(listProduct))
+                    let listProductReturn = this.returnListProduct(listProduct)
+                    return resolve({total: total_product,listProductReturn})
                 }
             });
     }
@@ -221,8 +237,15 @@ class ProductService {
                 } else {
                     orderByDb = 'DESC'
                 }
+                const queryCounter = `SELECT COUNT(*) as total FROM product as p
+                LEFT JOIN category as c ON c.id = p.category_id
+                JOIN main_category as mc ON mc.id =c.main_category_id
+                WHERE c.main_category_id = ${mysql.escape(id)} AND (${stringSearch})`;
+                console.log(queryCounter);
+                const countProductResult = await this.mysqlDb.poolQuery(queryCounter);
+                const total_product = countProductResult[0].total;
                 const query =
-                `SELECT p.*,mc.id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
+                `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
                 pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
                 FROM product as p
                 JOIN product_image AS pi ON p.id = pi.product_id
@@ -239,7 +262,9 @@ class ProductService {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(this.returnListProduct(listProduct))
+
+                    let listProductReturn = this.returnListProduct(listProduct)
+                    return resolve({total: total_product,listProductReturn})
                 }
 
             });
@@ -271,7 +296,7 @@ class ProductService {
                     orderByDb = 'DESC'
                 }
                 const query =
-                `SELECT p.*,mc.id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
+                `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
                 pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
                 FROM product as p
                 JOIN product_image AS pi ON p.id = pi.product_id
@@ -290,6 +315,64 @@ class ProductService {
                     return reject(err)
                 } else {
                     return resolve(this.returnListProduct(listProduct))
+                }
+
+            });
+
+    }
+    getProductsByMixCategorySlug(slug, productsPerPage, pageNumber, orderType, search) {
+        return new Promise(
+            async (resolve, reject) => {
+                let offsetDb = 0, orderByDb;
+                orderType = orderType ? orderType : 2
+                pageNumber = pageNumber ? pageNumber : 1
+                productsPerPage = productsPerPage ? productsPerPage : 100000
+                offsetDb = productsPerPage * (pageNumber - 1)
+                let stringSearch = ''
+                if (search) {
+                    stringSearch = search.split(' ').map(element => {
+                        return `p.name LIKE ${mysql.escape('%' + element + '%')} OR p.description LIKE ${mysql.escape('%' + element + '%')} 
+                        OR p.model_number LIKE ${mysql.escape('%' + element + '%')}`
+                    }).join(' OR ')
+                    console.log(stringSearch);
+                } else {
+                    stringSearch = `p.name LIKE ${mysql.escape('%' + "" + '%')} OR p.description LIKE ${mysql.escape('%' + "" + '%')} 
+                    OR p.model_number LIKE ${mysql.escape('%' + "" + '%')}`
+                }
+                if (orderType == orderTypeSetting.ASC) {
+                    orderByDb = 'ASC'
+                } else {
+                    orderByDb = 'DESC'
+                }
+                const queryCounter = `SELECT COUNT(*) as total FROM product as p
+                LEFT JOIN category as c ON c.id = p.category_id
+                JOIN main_category as mc ON mc.id =c.main_category_id
+                WHERE (c.slug = ${mysql.escape(slug)} OR mc.slug = ${mysql.escape(slug)})
+                AND (${stringSearch})`;
+                console.log(queryCounter);
+                const countProductResult = await this.mysqlDb.poolQuery(queryCounter);
+                const total_product = countProductResult[0].total;
+                const query =
+                `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
+                pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
+                FROM product as p
+                JOIN product_image AS pi ON p.id = pi.product_id
+                JOIN category AS c ON c.id = p.category_id
+                JOIN main_category AS mc ON mc.id = c.main_category_id  
+                WHERE (mc.slug = ${mysql.escape(slug)} OR c.slug = ${mysql.escape(slug)})
+                AND (${stringSearch})
+                ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+                LIMIT ${productsPerPage}
+                OFFSET ${mysql.escape(offsetDb)}`
+
+                let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
+                console.log(query)
+                if (err) {
+                    logger.error(`[productService][getProducts] errors : `, err)
+                    return reject(err)
+                } else {
+                    let listProductReturn = this.returnListProduct(listProduct)
+                    return resolve({total: total_product,listProductReturn})
                 }
 
             });

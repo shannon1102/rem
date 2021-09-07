@@ -15,3 +15,105 @@
 2021-09-07T17:26:36+07:00 info: '::1 - - [07/Sep/2021:10:26:36 +0000] "GET /api/product/get-by-main-category-slug/rem-vai-trong-nha-1630640342294 HTTP/1.1" 200 44 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-07T17:27:58+07:00 info: '::1 - - [07/Sep/2021:10:27:58 +0000] "GET /api/product/get-by-main-category-id/5 HTTP/1.1" 200 44 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
 2021-09-07T17:27:59+07:00 info: '::1 - - [07/Sep/2021:10:27:59 +0000] "GET /api/product/get-by-main-category-id/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:27:44+07:00 info: '::1 - - [07/Sep/2021:16:27:44 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:27:44+07:00 info: '::1 - - [07/Sep/2021:16:27:44 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 76794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:27:44+07:00 info: '::1 - - [07/Sep/2021:16:27:44 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:27:44+07:00 info: '::1 - - [07/Sep/2021:16:27:44 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:27:44+07:00 info: '::1 - - [07/Sep/2021:16:27:44 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:27:56+07:00 info: '::1 - - [07/Sep/2021:16:27:56 +0000] "GET /api/main-category/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:28:10+07:00 info: '::1 - - [07/Sep/2021:16:28:10 +0000] "GET /api/product/get-by-mix-category-slug/rem-vai-trong-nha-1630640342294 HTTP/1.1" 200 44 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:28:23+07:00 info: '::1 - - [07/Sep/2021:16:28:23 +0000] "GET /api/product/ HTTP/1.1" 200 1764 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:28:49+07:00 info: '::1 - - [07/Sep/2021:16:28:49 +0000] "GET /api/product/get-by-mix-category-slug/rem-vai-ngoai-troi-1630640329075 HTTP/1.1" 200 1676 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:29:19+07:00 info: '::1 - - [07/Sep/2021:16:29:19 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:29:34+07:00 info: '::1 - - [07/Sep/2021:16:29:34 +0000] "GET /api/product/get-by-main-category-slug/rem-vai-ngoai-troi-1630640329075 HTTP/1.1" 200 1676 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:31:21+07:00 info: '::1 - - [07/Sep/2021:16:31:21 +0000] "GET /api/product/get-by-mix-category-slug/new-sub-category-1630664582497 HTTP/1.1" 200 1272 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:34:32+07:00 info: '::1 - - [07/Sep/2021:16:34:32 +0000] "GET /api/product/get-by-slug/string-1630642431665 HTTP/1.1" 200 467 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:38:25+07:00 info: '::1 - - [07/Sep/2021:16:38:25 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:41:26+07:00 info: '::1 - - [07/Sep/2021:16:41:26 +0000] "GET /api/product/get-by-category-slug/sub-category-1630641845645 HTTP/1.1" 200 469 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:45:21+07:00 info: '::1 - - [07/Sep/2021:16:45:21 +0000] "GET /api/product/get-by-category-slug/sub-category-1630641845645 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:45:26+07:00 info: '::1 - - [07/Sep/2021:16:45:26 +0000] "GET /api/product/get-by-main-category-slug/rem-vai-ngoai-troi-1630640329075 HTTP/1.1" 200 1764 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:45:42+07:00 info: '::1 - - [07/Sep/2021:16:45:42 +0000] "GET /api/product/get-by-mix-category-slug/new-sub-category-1630664582497 HTTP/1.1" 200 1338 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:45:51+07:00 info: '::1 - - [07/Sep/2021:16:45:51 +0000] "GET /api/product/get-by-mix-category-slug/rem-vai-ngoai-troi-1630640329075 HTTP/1.1" 200 1764 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:50:17+07:00 info: '::1 - - [07/Sep/2021:16:50:17 +0000] "GET /api/product/ HTTP/1.1" 200 1811 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:52:40+07:00 info: '::1 - - [07/Sep/2021:16:52:40 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:53:11+07:00 info: '::1 - - [07/Sep/2021:16:53:11 +0000] "GET /api/product/?productsPerPage=1 HTTP/1.1" 200 524 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:53:59+07:00 info: '::1 - - [07/Sep/2021:16:53:59 +0000] "GET /api/product/?productsPerPage=1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:54:11+07:00 info: '::1 - - [07/Sep/2021:16:54:11 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:55:32+07:00 info: '::1 - - [07/Sep/2021:16:55:32 +0000] "GET /api/product/64 HTTP/1.1" 500 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:56:41+07:00 info: '::1 - - [07/Sep/2021:16:56:41 +0000] "GET /api/product/64 HTTP/1.1" 500 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:56:47+07:00 info: '::1 - - [07/Sep/2021:16:56:47 +0000] "GET /api/product/ HTTP/1.1" 200 1811 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:57:01+07:00 info: '::1 - - [07/Sep/2021:16:57:01 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:57:41+07:00 info: '::1 - - [07/Sep/2021:16:57:41 +0000] "POST /api/product/ HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:57:48+07:00 info: '::1 - - [07/Sep/2021:16:57:48 +0000] "GET /api/product/ HTTP/1.1" 200 2232 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:58:41+07:00 info: '::1 - - [07/Sep/2021:16:58:41 +0000] "GET /api/product/ HTTP/1.1" 200 2207 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:59:21+07:00 error: "uncaughtException: Unexpected token '{'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:38\n' +
+  '                console.log{total_product}\n' +
+  '                           ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token '{'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-07T23:59:34+07:00 info: '::1 - - [07/Sep/2021:16:59:34 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-07T23:59:54+07:00 info: '::1 - - [07/Sep/2021:16:59:54 +0000] "GET /api/product/ HTTP/1.1" 200 2237 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:01:00+07:00 info: '::1 - - [07/Sep/2021:17:01:00 +0000] "GET /api/product/ HTTP/1.1" 200 2207 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:01:16+07:00 info: '::1 - - [07/Sep/2021:17:01:16 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:01:37+07:00 info: '::1 - - [07/Sep/2021:17:01:37 +0000] "GET /api/product/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:02:03+07:00 info: '::1 - - [07/Sep/2021:17:02:03 +0000] "GET /api/product/ HTTP/1.1" 200 2217 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:02:20+07:00 info: '::1 - - [07/Sep/2021:17:02:20 +0000] "GET /api/product/?productsPerPage=2 HTTP/1.1" 200 930 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:06:07+07:00 info: '::1 - - [07/Sep/2021:17:06:07 +0000] "GET /api/product/?search=new HTTP/1.1" 200 930 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:08:46+07:00 error: "uncaughtException: Unexpected token '.'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:157\n' +
+  '                    return resolve({total: total_product,this.returnListProduct(listProduct)})\n' +
+  '                                                             ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token '.'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-09-08T00:10:12+07:00 info: '::1 - - [07/Sep/2021:17:10:12 +0000] "POST /api/product/ HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:10:18+07:00 info: '::1 - - [07/Sep/2021:17:10:18 +0000] "GET /api/product/?search=new HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:10:26+07:00 info: '::1 - - [07/Sep/2021:17:10:26 +0000] "GET /api/product/?search=ne HTTP/1.1" 200 1378 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:11:19+07:00 info: '::1 - - [07/Sep/2021:17:11:19 +0000] "GET /api/product/get-by-category-id/16 HTTP/1.1" 200 2239 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:11:26+07:00 info: '::1 - - [07/Sep/2021:17:11:26 +0000] "GET /api/product/get-by-category-id/16?productsPerPage=2 HTTP/1.1" 200 944 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:11:34+07:00 info: '::1 - - [07/Sep/2021:17:11:34 +0000] "GET /api/product/get-by-category-id/15?productsPerPage=2 HTTP/1.1" 200 501 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:16:50+07:00 info: '::1 - - [07/Sep/2021:17:16:50 +0000] "GET /api/product/get-by-category-slug/sub-category-1630641845645 HTTP/1.1" 200 501 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:17:11+07:00 info: '::1 - - [07/Sep/2021:17:17:11 +0000] "GET /api/category/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:17:26+07:00 info: '::1 - - [07/Sep/2021:17:17:26 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 200 2239 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:18:53+07:00 info: '::1 - - [07/Sep/2021:17:18:53 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 200 2239 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:19:08+07:00 info: '::1 - - [07/Sep/2021:17:19:08 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:22:26+07:00 info: '::1 - - [07/Sep/2021:17:22:26 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:22:37+07:00 info: '::1 - - [07/Sep/2021:17:22:37 +0000] "GET /api/product/get-by-category-slug/new-sub-category-1630664582497?productsPerPage=2 HTTP/1.1" 200 944 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:25:16+07:00 info: '::1 - - [07/Sep/2021:17:25:16 +0000] "GET /api/product/get-by-main-category-id/4 HTTP/1.1" 200 2633 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:51:16+07:00 info: '::1 - - [07/Sep/2021:17:51:16 +0000] "GET /api/product/get-by-main-category-id/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:54:27+07:00 info: '::1 - - [07/Sep/2021:17:54:27 +0000] "GET /api/main-category/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:54:56+07:00 info: '::1 - - [07/Sep/2021:17:54:56 +0000] "GET /api/product/get-by-mix-category-slug/rem-vai-ngoai-troi-1630640329075 HTTP/1.1" 200 2665 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:55:03+07:00 info: '::1 - - [07/Sep/2021:17:55:03 +0000] "GET /api/product/get-by-mix-category-slug/rem-vai-ngoai-troi-1630640329075?productsPerPage=2 HTTP/1.1" 200 944 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T00:55:10+07:00 info: '::1 - - [07/Sep/2021:17:55:10 +0000] "GET /api/product/get-by-mix-category-slug/rem-vai-trong-nha-1630640342294?productsPerPage=2 HTTP/1.1" 200 76 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:00:59+07:00 info: '::1 - - [07/Sep/2021:18:00:59 +0000] "POST /api/product/ HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:01:09+07:00 info: '::1 - - [07/Sep/2021:18:01:09 +0000] "POST /api/product/ HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:11:54+07:00 info: '::1 - - [07/Sep/2021:18:11:54 +0000] "GET /api/post/ HTTP/1.1" 200 1694 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:12:04+07:00 info: '::1 - - [07/Sep/2021:18:12:04 +0000] "GET /api/post/?postsPerPage=3 HTTP/1.1" 200 794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:16:42+07:00 info: '::1 - - [07/Sep/2021:18:16:42 +0000] "GET /api/tag/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:16:55+07:00 info: '::1 - - [07/Sep/2021:18:16:55 +0000] "GET /api/post/?postsPerPage=3 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:17:10+07:00 info: '::1 - - [07/Sep/2021:18:17:10 +0000] "GET /api/post/10 HTTP/1.1" 200 231 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:20:55+07:00 info: '::1 - - [07/Sep/2021:18:20:55 +0000] "GET /api/post/get-by-tag-slug/tin-tuc-1630636847645 HTTP/1.1" 200 1671 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:21:49+07:00 info: '::1 - - [07/Sep/2021:18:21:49 +0000] "GET /api/post/get-by-tag-id/4 HTTP/1.1" 500 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:21:54+07:00 info: '::1 - - [07/Sep/2021:18:21:54 +0000] "GET /api/post/get-by-tag-id/6 HTTP/1.1" 200 1694 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:22:30+07:00 info: '::1 - - [07/Sep/2021:18:22:30 +0000] "DELETE /api/tag/6 HTTP/1.1" 200 50 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-08T01:22:37+07:00 info: '::1 - - [07/Sep/2021:18:22:37 +0000] "GET /api/post/?postsPerPage=3 HTTP/1.1" 200 70 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'

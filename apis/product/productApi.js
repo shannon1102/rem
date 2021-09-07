@@ -76,6 +76,20 @@ productApi.get('/get-by-category-slug/:slug', (req, res, next) => {
         })
 
 })
+productApi.get('/get-by-mix-category-slug/:slug', (req, res, next) => {
+
+    let { slug } = req.params
+    let { productsPerPage, pageNumber, orderType, search } = req.query;
+    productService
+        .getProductsByMixCategorySlug(slug, productsPerPage, pageNumber, orderType, search)
+        .then(listProduct => {
+            return res.status(200).json({ status: 200, message: "Success", data: listProduct })
+        })
+        .catch(err => {
+            return res.status(500).json({ status: 500, message: err })
+        })
+
+})
 
 productApi.get('/get-by-category-and-material/', (req, res, next) => {
 
