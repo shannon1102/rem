@@ -235,8 +235,6 @@ class ProductService {
                 OFFSET ${mysql.escape(offsetDb)}`
 
                 let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
-                console.log(query)
-                consolo.log(listProduct)
                 if (err) {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
@@ -250,6 +248,7 @@ class ProductService {
     getProductsByMainCategorySlug(slug, productsPerPage, pageNumber, orderType, search) {
         return new Promise(
             async (resolve, reject) => {
+                console.log(">???")
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
@@ -278,7 +277,7 @@ class ProductService {
                 JOIN product_image AS pi ON p.id = pi.product_id
                 JOIN category AS c ON c.id = p.category_id
                 JOIN main_category AS mc ON mc.id = c.main_category_id  
-                WHERE mc.id = ${mysql.escape(slug)}
+                WHERE mc.slug = ${mysql.escape(slug)}
                 AND (${stringSearch})
                 ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
                 LIMIT ${productsPerPage}

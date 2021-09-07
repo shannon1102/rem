@@ -95,7 +95,6 @@ productApi.get('/get-by-category-and-material/', (req, res, next) => {
 productApi.get('/get-by-main-category-id/:id', (req, res, next) => {
 
     let { id } = req.params
-    console.log(id);
     let { productsPerPage, pageNumber, orderType, search } = req.query;
     productService
         .getProductsByMainCategoryId(id, productsPerPage, pageNumber, orderType, search)
@@ -110,7 +109,6 @@ productApi.get('/get-by-main-category-id/:id', (req, res, next) => {
 productApi.get('/get-by-main-category-slug/:slug', (req, res, next) => {
 
     let { slug } = req.params
-    console.log(id);
     let { productsPerPage, pageNumber, orderType, search } = req.query;
     productService
         .getProductsByMainCategorySlug(slug, productsPerPage, pageNumber, orderType, search)
@@ -224,25 +222,7 @@ productApi.post('/', verifyToken, adminRole, checkRequiredFieldInBody(['name', '
             return res.status(500).json({ status: 500, message: err })
         })
 })
-productApi.post('/upload-product-image/:id', verifyToken, adminRole, checkRequiredFieldInBody(['name', 'description', 'model_number',  'category_id']), (req, res, next) => {
-    let { id } = req.params
-    let { name, description, model_number, list_product_images, origin, brand,
-        thickness, price, material, size, category_id } = req.body
-    console.log(description)
-    productService
-        .updateProduct(id, name, description, model_number, list_product_images, origin, brand,
-            thickness, price, material, size, category_id)
-        .then(result => {
-            return res.status(200).json({
-                status: 200,
-                message: 'Update product-image sucessfully',
-                product: result
-            })
-        })
-        .catch(err => {
-            return res.status(500).json({ status: 500, message: err })
-        })
-})
+
 productApi.put('/:id', verifyToken, adminRole, (req, res, next) => {
     let { id } = req.params
     let { name, description, model_number, list_product_images, origin, brand,
