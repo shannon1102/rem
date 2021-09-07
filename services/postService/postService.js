@@ -107,7 +107,7 @@ class PostService {
             if (!postResult.length) {
                 return reject(`post with tag id ${tag_id} not found`)
             }
-            return resolve(postResult[0])
+            return resolve(postResult)
         })
     }
     getPostByTitle(title) {

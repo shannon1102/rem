@@ -20,16 +20,17 @@ const removeAccent = (str) => {
 }
 const createSlug = (str) => {
     let newStr = ''
-    if(str.includes('[')){
-        newStr= str.substring(0, str.indexOf("["));
-    }else{
-        newStr= str
-    }
+    // if(str.includes('[')){
+    //     newStr= str.substring(0, str.indexOf("["));
+    // }else{
+    //     newStr= str
+    // }
     
-    newStr = removeAccent(slugify(newStr, {
+    newStr = removeAccent(slugify(str, {
 
         replacement: '-', // replace spaces with replacement character, defaults to `-`
-        remove:  /[*+~.()'"!:@]/g, // remove characters that match regex, defaults to `undefined`
+        remove:  /[*+~.()[\]'"!:@,%^$!#;/\\+]/g, // remove characters that match regex, defaults to `undefined`
+        remove: /[^a-zA-Z0-9 -]/g,
         lower: true,      // convert to lower case, defaults to `false`
         strict: false,     // strip special characters except replacement, defaults to `false`     // language code of the locale to use
         trim: true         // trim leading and trailing replacement chars, defaults to `true`
