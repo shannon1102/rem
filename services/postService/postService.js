@@ -114,7 +114,7 @@ class PostService {
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             }
             if (!postsResult.length) {
-                return reject(`post with tag slug ${tag_slug} not found`)
+                return resolve({ total: total_post, postsResult })
             }
             return resolve({ total: total_post, postsResult })
         })
@@ -151,9 +151,9 @@ class PostService {
             if (err) {
                 logger.error(`[postService][getPostByTagId] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
-            }
+            }   
             if (!postsResult.length) {
-                return reject(`post with tag id ${tag_id} not found`)
+                return resolve({total:total_post,postsResult})
             }
             return resolve({total:total_post,postsResult})
         })
