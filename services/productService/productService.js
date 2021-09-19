@@ -455,6 +455,11 @@ class ProductService {
         return new Promise(async (resolve, reject) => {
             try {
                 await this.mysqlDb.beginTransaction()
+                queryCheck = `SELECT COUNT(*) AS numProduct FROM product WHERE model_number = ${mysql.escape(model_number)}`
+                let resultCheck = await this.mysqlDb.poolQuery(queryCheck)
+                if (!resultCheck[0].numProduct) {
+                    return reject(`Product with model_number ${model_number} existed`)
+                }
                 const query = `INSERT INTO product(name,description,model_number,origin,
                 brand,thickness,price,material,weight,feature,repeat_deg,size, category_id,slug) 
             VALUES (${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(model_number)},
