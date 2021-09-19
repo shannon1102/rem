@@ -110,7 +110,7 @@ class MainCategoryService {
             if (err) {
                 console.log(err);
                 logger.error(`[MainCategoryService][createMainCategory] errors: `, err)
-                return reject(err?.sqlMessage ? err.sqlMessage : err)
+                return reject(err)
             }
             return resolve(result?.insertId)
         })
@@ -127,7 +127,7 @@ class MainCategoryService {
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
                 logger.error(`[MainCategoryService][updateMaiCategory] errors: `, err)
-                return reject(err?.sqlMessage ? err.sqlMessage : err)
+                return reject(err)
             }
             if (result.affectedRows === 0) {
                 return reject(`MainCategory with id ${id} not found`)
