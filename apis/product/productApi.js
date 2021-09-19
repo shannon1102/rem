@@ -219,7 +219,7 @@ productApi.get('/get-all-brand/list/', (req, res, next) => {
             return res.status(500).json({ status: 500, message: err })
         })
 })
-productApi.post('/', verifyToken, adminRole, checkRequiredFieldInBody(['name', 'description', 'model_number', 'category_id']), (req, res, next) => {
+productApi.post('/', verifyToken, adminRole, checkRequiredFieldInBody(['name', 'category_id']), (req, res, next) => {
     let { name, description, model_number, list_product_images, origin, brand,
         thickness, price, material,weight,feature,repeat_deg,size, category_id } = req.body
     console.log("sdadda", req.body)

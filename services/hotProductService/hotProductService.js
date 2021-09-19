@@ -25,7 +25,7 @@ class HotProductService {
                 const query =
                     `SELECT p.*,pi.*,hp.product_id,c.main_category_id FROM product as p  
                     JOIN hot_product as hp ON p.id = hp.product_id
-                    JOIN product_image as pi ON pi.product_id = p.id
+                    LEFT JOIN product_image as pi ON pi.product_id = p.id
                     JOIN category as c ON c.id = p.category_id    
                     WHERE 
                     (p.name LIKE ${mysql.escape('%' + search + '%')}
@@ -135,13 +135,17 @@ class HotProductService {
                 "thickness": e.thickness,
                 "price": e.price,
                 "material": e.material,
+                "weight":e.weight,
+                "feature":e.feature,
+                "repeat_deg":e.repeat_deg,
                 "size": e.size,
                 "category_id": e.category_id,
                 "main_category_id": e.main_category_id,
                 "slug": e.slug,
                 "create_at": e.create_at,
                 "update_at": e.update_at,
-                "list_product_images": [e.url_image1, e.url_image2, e.url_image3, e.url_image4, e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
+                "list_product_images": [e.url_image1, e.url_image2, e.url_image3, e.url_image4,
+                e.url_image5, e.url_image6, e.url_image7, e.url_image8].filter(e1 => (e1 !== null && e1?.length > 0))
             }
         }
         )

@@ -41,7 +41,7 @@ class ProductService {
                     `SELECT p.*,c.main_category_id,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4,
                     pi.url_image5,pi.url_image6,pi.url_image7,pi.url_image8  
                     FROM product as p
-                    JOIN product_image AS pi ON p.id = pi.product_id
+                    LEFT JOIN product_image AS pi ON p.id = pi.product_id
                     JOIN category AS c ON c.id = p.category_id
                     WHERE ${stringSearch}
                     ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -671,5 +671,4 @@ class ProductService {
     return returnList
     }
 }
-
 module.exports = ProductService;
