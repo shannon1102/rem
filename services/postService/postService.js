@@ -181,9 +181,8 @@ class PostService {
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
-                console.log(err);
                 logger.error(`[postService][createPost] errors: `, err)
-                return reject(err?.sqlMessage ? err.sqlMessage : err)
+                return reject( err)
             }
             return resolve(result?.insertId)
         })
@@ -201,7 +200,7 @@ class PostService {
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
                 logger.error(`[postService][updatePost] errors: `, err)
-                return reject(err?.sqlMessage ? err.sqlMessage : err)
+                return reject(err)
             }
             if (result.affectedRows === 0) {
                 return reject(`post with id ${id} not found`)
