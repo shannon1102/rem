@@ -1666,9 +1666,6 @@
                 },
                 "url_image": {
                   "type": "string"
-                },
-                "sub_image": {
-                  "type": "string"
                 }
               }
             }

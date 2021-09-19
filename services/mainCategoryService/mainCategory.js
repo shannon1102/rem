@@ -115,12 +115,13 @@ class MainCategoryService {
             return resolve(result?.insertId)
         })
     }
-    updateMainCategory(id, name, description) {
+    updateMainCategory(id, name, description,url_image) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE main_category SET 
                 name = ${mysql.escape(name)},
-                description = ${mysql.escape(description)}
+                description = ${mysql.escape(description)},
+                url_image = ${mysql.escape(url_image)}
                 WHERE id = ${mysql.escape(id)}
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
