@@ -182,7 +182,7 @@ class PostService {
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
                 logger.error(`[postService][createPost] errors: `, err)
-                return reject( err)
+                return reject(err)
             }
             return resolve(result?.insertId)
         })

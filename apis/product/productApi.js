@@ -221,11 +221,11 @@ productApi.get('/get-all-brand/list/', (req, res, next) => {
 })
 productApi.post('/', verifyToken, adminRole, checkRequiredFieldInBody(['name', 'category_id']), (req, res, next) => {
     let { name, description, model_number, list_product_images, origin, brand,
-        thickness, price, material,weight,feature,repeat_deg,size, category_id } = req.body
+        thickness, price,unit_cost, material,weight,feature,repeat_deg,size, category_id } = req.body
     console.log("sdadda", req.body)
     productService
         .createProduct(name, description, model_number, list_product_images, origin,
-            brand,thickness, price, material,weight,feature,repeat_deg, size, category_id)
+            brand,thickness, price,unit_cost, material,weight,feature,repeat_deg, size, category_id)
         .then(result => {
             return res.status(200).json({
                 status: 200,
@@ -240,11 +240,11 @@ productApi.post('/', verifyToken, adminRole, checkRequiredFieldInBody(['name', '
 productApi.put('/:id', verifyToken, adminRole, (req, res, next) => {
     let { id } = req.params
     let { name, description, model_number, list_product_images, origin, brand,
-        thickness, price, material,weight,feature,repeat_deg, size, category_id } = req.body
+        thickness, price,unit_cost, material,weight,feature,repeat_deg, size, category_id } = req.body
     console.log(req.body)
     productService
         .updateProduct(id, name, description, model_number, list_product_images, origin, brand,
-            thickness, price, material,weight,feature,repeat_deg, size, category_id)
+            thickness, price,unit_cost, material,weight,feature,repeat_deg, size, category_id)
         .then(result => {
             return res.status(200).json({
                 status: 200,

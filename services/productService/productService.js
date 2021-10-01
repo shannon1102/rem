@@ -441,7 +441,7 @@ class ProductService {
         })
     }
     createProduct(name, description, model_number, list_product_images, origin,
-        brand, thickness, price, material,weight,feature,repeat_deg, size, category_id) {
+        brand, thickness, price,unit_cost, material,weight,feature,repeat_deg, size, category_id) {
         const slug = createSlug(name);
         console.log('slug', slug);
         const url_image1 = list_product_images[0] ? list_product_images[0] : null;
@@ -461,10 +461,10 @@ class ProductService {
                 //     return reject(`Product with model_number ${model_number} existed`)
                 // }
                 const query = `INSERT INTO product(name,description,model_number,origin,
-                brand,thickness,price,material,weight,feature,repeat_deg,size, category_id,slug) 
+                brand,thickness,price,unit_cost,material,weight,feature,repeat_deg,size, category_id,slug) 
             VALUES (${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(model_number)},
             ${mysql.escape(origin)},${mysql.escape(brand)},${mysql.escape(thickness)},
-            ${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(weight)},
+            ${mysql.escape(price)},${mysql.escape(unit_cost)},${mysql.escape(material)},${mysql.escape(weight)},
             ${mysql.escape(feature)},${mysql.escape(repeat_deg)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
             `
                 const [err0, result] = await to(this.mysqlDb.poolQuery(query))
@@ -495,7 +495,7 @@ class ProductService {
         })
     }
     updateProduct(id, name, description, model_number, list_product_images, origin,
-        brand, thickness, price, material,weight,feature,repeat_deg , size, category_id) {
+        brand, thickness, price,unit_cost, material,weight,feature,repeat_deg , size, category_id) {
         const url_image1 = list_product_images[0] ? list_product_images[0] : null;
         const url_image2 = list_product_images[1] ? list_product_images[1] : null;
         const url_image3 = list_product_images[2] ? list_product_images[2] : null;
@@ -521,6 +521,7 @@ class ProductService {
                brand = ${mysql.escape(brand)},
                thickness = ${mysql.escape(thickness)},
                price = ${mysql.escape(price)},
+               unit_cost = ${mysql.escape(unit_cost)},
                material= ${mysql.escape(material)},
                weight= ${mysql.escape(weight)},
                feature= ${mysql.escape(feature)},
@@ -614,6 +615,7 @@ class ProductService {
             "origin": e.origin,
             "thickness": e.thickness,
             "price": e.price,
+            "unit_cost":e.unit_cost,
             "material": e.material,
             "weight":e.weight,
             "feature":e.feature,
@@ -639,6 +641,7 @@ class ProductService {
                 "origin": e.origin,
                 "thickness": e.thickness,
                 "price": e.price,
+                "unit_cost": e.unit_cost,
                 "material": e.material,
                 "weight":e.weight,
                 "feature":e.feature,
