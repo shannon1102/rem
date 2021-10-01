@@ -13,10 +13,10 @@ let sendEmail = async (payload)=>{
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '"Giang Minh Viet Website" <gmvmailer@gmail.com>', // sender address
+    from: '"Rem Vuong Hong Website" <rembacninhwebsite@gmail.com>', // sender address
     //to: "receiverEmail", // list of receivers
     to: [`${process.env.RECV_EMAIL_SALE}`,`${process.env.RECV_EMAIL_BOSS}`],
-    subject: "GVM website have new inquiry", // Subject line
+    subject: "Rem Vuong Hong website have new inquiry", // Subject line
     html: `
     <h2><b>Inquiry Information</b></h2>
     <div style="margin-left: 30px;">
@@ -30,7 +30,7 @@ let sendEmail = async (payload)=>{
     <p><b>Quantity:</b> ${payload.quantity} <p>
     </div>
     <div>
-    <p>Giang Minh Viet - High quality products <a href="${process.env.SHOP_WEBSITE_URL}">Click Here</a></p>
+    <p>Rem Vuong Hong - High quality products <a href="${process.env.SHOP_WEBSITE_URL}">Click Here</a></p>
     </div>
     `, // html body
   });
