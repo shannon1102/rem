@@ -178,3 +178,596 @@
 2021-10-01T09:15:00+07:00 info: '::1 - - [01/Oct/2021:02:15:00 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
 2021-10-01T09:15:09+07:00 info: '::1 - - [01/Oct/2021:02:15:09 +0000] "GET /api/product/ HTTP/1.1" 200 4111 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
 2021-10-01T09:16:19+07:00 info: '::1 - - [01/Oct/2021:02:16:19 +0000] "PUT /api/product/74 HTTP/1.1" 200 54 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:33+07:00 info: '::1 - - [02/Oct/2021:13:06:33 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:33+07:00 info: '::1 - - [02/Oct/2021:13:06:33 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 76955 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:33+07:00 info: '::1 - - [02/Oct/2021:13:06:33 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:33+07:00 info: '::1 - - [02/Oct/2021:13:06:33 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:33+07:00 info: '::1 - - [02/Oct/2021:13:06:33 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:47+07:00 info: '::1 - - [02/Oct/2021:13:06:47 +0000] "GET /api/post/ HTTP/1.1" 200 70 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:06:56+07:00 info: '::1 - - [02/Oct/2021:13:06:56 +0000] "GET /api/product/ HTTP/1.1" 200 4113 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:18+07:00 info: '::1 - - [02/Oct/2021:13:10:18 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:18+07:00 info: '::1 - - [02/Oct/2021:13:10:18 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 1537876 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:18+07:00 info: '::1 - - [02/Oct/2021:13:10:18 +0000] "GET /api/api-docs/swagger-ui-bundle.js.map HTTP/1.1" 200 4804400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:18+07:00 info: '::1 - - [02/Oct/2021:13:10:18 +0000] "GET /api/api-docs/swagger-ui.css.map HTTP/1.1" 200 274973 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:19+07:00 info: '::1 - - [02/Oct/2021:13:10:19 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:22+07:00 info: '::1 - - [02/Oct/2021:13:10:22 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:10:23+07:00 info: '::1 - - [02/Oct/2021:13:10:23 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:11:04+07:00 info: '::1 - - [02/Oct/2021:13:11:04 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:42+07:00 info: '::1 - - [02/Oct/2021:13:13:42 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:42+07:00 info: '::1 - - [02/Oct/2021:13:13:42 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:42+07:00 info: '::1 - - [02/Oct/2021:13:13:42 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:42+07:00 info: '::1 - - [02/Oct/2021:13:13:42 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:42+07:00 info: '::1 - - [02/Oct/2021:13:13:42 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:43+07:00 info: '::1 - - [02/Oct/2021:13:13:43 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:57+07:00 info: '::1 - - [02/Oct/2021:13:13:57 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:57+07:00 info: '::1 - - [02/Oct/2021:13:13:57 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:57+07:00 info: '::1 - - [02/Oct/2021:13:13:57 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:57+07:00 info: '::1 - - [02/Oct/2021:13:13:57 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:57+07:00 info: '::1 - - [02/Oct/2021:13:13:57 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:13:58+07:00 info: '::1 - - [02/Oct/2021:13:13:58 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:38+07:00 info: '::1 - - [02/Oct/2021:13:14:38 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:38+07:00 info: '::1 - - [02/Oct/2021:13:14:38 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:38+07:00 info: '::1 - - [02/Oct/2021:13:14:38 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:38+07:00 info: '::1 - - [02/Oct/2021:13:14:38 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:38+07:00 info: '::1 - - [02/Oct/2021:13:14:38 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:39+07:00 info: '::1 - - [02/Oct/2021:13:14:39 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:39+07:00 info: '::1 - - [02/Oct/2021:13:14:39 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:39+07:00 info: '::1 - - [02/Oct/2021:13:14:39 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:39+07:00 info: '::1 - - [02/Oct/2021:13:14:39 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:39+07:00 info: '::1 - - [02/Oct/2021:13:14:39 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:39+07:00 info: '::1 - - [02/Oct/2021:13:14:39 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:40+07:00 info: '::1 - - [02/Oct/2021:13:14:40 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:52+07:00 info: '::1 - - [02/Oct/2021:13:14:52 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:52+07:00 info: '::1 - - [02/Oct/2021:13:14:52 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:52+07:00 info: '::1 - - [02/Oct/2021:13:14:52 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:52+07:00 info: '::1 - - [02/Oct/2021:13:14:52 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:52+07:00 info: '::1 - - [02/Oct/2021:13:14:52 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:14:52+07:00 info: '::1 - - [02/Oct/2021:13:14:52 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:19+07:00 info: '::1 - - [02/Oct/2021:13:23:19 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:19+07:00 info: '::1 - - [02/Oct/2021:13:23:19 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:19+07:00 info: '::1 - - [02/Oct/2021:13:23:19 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:19+07:00 info: '::1 - - [02/Oct/2021:13:23:19 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:19+07:00 info: '::1 - - [02/Oct/2021:13:23:19 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:20+07:00 info: '::1 - - [02/Oct/2021:13:23:20 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:46+07:00 info: '::1 - - [02/Oct/2021:13:23:46 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:46+07:00 info: '::1 - - [02/Oct/2021:13:23:46 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:46+07:00 info: '::1 - - [02/Oct/2021:13:23:46 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:46+07:00 info: '::1 - - [02/Oct/2021:13:23:46 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:46+07:00 info: '::1 - - [02/Oct/2021:13:23:46 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:47+07:00 info: '::1 - - [02/Oct/2021:13:23:47 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:47+07:00 info: '::1 - - [02/Oct/2021:13:23:47 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:47+07:00 info: '::1 - - [02/Oct/2021:13:23:47 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:47+07:00 info: '::1 - - [02/Oct/2021:13:23:47 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:47+07:00 info: '::1 - - [02/Oct/2021:13:23:47 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:47+07:00 info: '::1 - - [02/Oct/2021:13:23:47 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-02T20:23:48+07:00 info: '::1 - - [02/Oct/2021:13:23:48 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"\n'
+2021-10-06T23:01:02+07:00 info: '::1 - - [06/Oct/2021:16:01:02 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:12+07:00 info: '::1 - - [06/Oct/2021:16:01:12 +0000] "GET /api/api-docs HTTP/1.1" 301 191 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:12+07:00 info: '::1 - - [06/Oct/2021:16:01:12 +0000] "GET /api/api-docs/ HTTP/1.1" 200 3104 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:12+07:00 info: '::1 - - [06/Oct/2021:16:01:12 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 76955 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:12+07:00 info: '::1 - - [06/Oct/2021:16:01:12 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:12+07:00 info: '::1 - - [06/Oct/2021:16:01:12 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:12+07:00 info: '::1 - - [06/Oct/2021:16:01:12 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:13+07:00 info: '::1 - - [06/Oct/2021:16:01:13 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:28+07:00 info: '::1 - - [06/Oct/2021:16:01:28 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:01:56+07:00 error: '[productService][createProduct] errors:  this.mysqlDb.connection.release is not a function'
+2021-10-06T23:02:55+07:00 error: '[productService][createProduct] errors:  this.mysqlDb.connection.release is not a function'
+2021-10-06T23:08:17+07:00 error: '[productService][createProduct] errors:  this.mysqlDb.release is not a function'
+2021-10-06T23:17:18+07:00 error: "[productService][createProduct] errors:  Cannot read property 'query' of undefined"
+2021-10-06T23:17:57+07:00 error: "[productService][createProduct] errors:  Cannot read property 'query' of undefined"
+2021-10-06T23:17:57+07:00 info: '::1 - - [06/Oct/2021:16:17:57 +0000] "POST /api/product/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:18:49+07:00 error: '[productService][createProduct] errors:  promise.then is not a function'
+2021-10-06T23:18:49+07:00 info: '::1 - - [06/Oct/2021:16:18:49 +0000] "POST /api/product/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:19:27+07:00 error: '[productService][createProduct] errors:  (intermediate value) is not iterable'
+2021-10-06T23:19:27+07:00 info: '::1 - - [06/Oct/2021:16:19:27 +0000] "POST /api/product/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:34:35+07:00 info: '::1 - - [06/Oct/2021:16:34:35 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:34:51+07:00 error: '[productService][createProduct] errors:  Cannot enqueue Query after invoking quit.'
+2021-10-06T23:37:19+07:00 error: '[productService][createProduct] errors:  ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-10-06T23:37:19+07:00 info: '::1 - - [06/Oct/2021:16:37:19 +0000] "POST /api/product/ HTTP/1.1" 500 681 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:38:01+07:00 error: '[productService][createProduct] errors:  Cannot enqueue Query after invoking quit.'
+2021-10-06T23:38:35+07:00 info: '::1 - - [06/Oct/2021:16:38:35 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-06T23:43:40+07:00 error: '[productService][createProduct] errors:  Cannot enqueue Query after invoking quit.'
+2021-10-07T00:42:51+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:479\n' +
+  '                                    const [err0, result] = await to(connection.query(query))\n' +
+  '                                                           ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T00:43:39+07:00 error: "uncaughtException: Unexpected token 'this'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:457\n' +
+  '                async this.mysqlDb.pool.getConnection(\n' +
+  '                      ^^^^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token 'this'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T00:44:09+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:479\n' +
+  '                                    const [err0, result] = await to(connection.query(query))\n' +
+  '                                                           ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T00:46:58+07:00 info: '::1 - - [06/Oct/2021:17:46:58 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:47:27+07:00 info: '::1 - - [06/Oct/2021:17:47:27 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:47:29+07:00 info: '::1 - - [06/Oct/2021:17:47:29 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:47:30+07:00 info: '::1 - - [06/Oct/2021:17:47:30 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:47:31+07:00 info: '::1 - - [06/Oct/2021:17:47:31 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:47:40+07:00 info: '::1 - - [06/Oct/2021:17:47:40 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:48:43+07:00 info: '::1 - - [06/Oct/2021:17:48:43 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T00:50:43+07:00 info: '::1 - - [06/Oct/2021:17:50:43 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:46+07:00 info: '::1 - - [06/Oct/2021:20:02:46 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:49+07:00 info: '::1 - - [06/Oct/2021:20:02:49 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:50+07:00 info: '::1 - - [06/Oct/2021:20:02:50 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:51+07:00 info: '::1 - - [06/Oct/2021:20:02:51 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:52+07:00 info: '::1 - - [06/Oct/2021:20:02:52 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:52+07:00 info: '::1 - - [06/Oct/2021:20:02:52 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:53+07:00 info: '::1 - - [06/Oct/2021:20:02:53 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:53+07:00 info: '::1 - - [06/Oct/2021:20:02:53 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:02:54+07:00 info: '::1 - - [06/Oct/2021:20:02:54 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:03:07+07:00 info: '::1 - - [06/Oct/2021:20:03:07 +0000] "GET /api/product/ HTTP/1.1" 200 14557 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:03:27+07:00 info: '::1 - - [06/Oct/2021:20:03:27 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:03:31+07:00 info: '::1 - - [06/Oct/2021:20:03:31 +0000] "GET /api/product/ HTTP/1.1" 200 15008 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:03:38+07:00 info: '::1 - - [06/Oct/2021:20:03:38 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:03:41+07:00 info: '::1 - - [06/Oct/2021:20:03:41 +0000] "GET /api/product/ HTTP/1.1" 200 15459 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:07+07:00 info: '::1 - - [06/Oct/2021:20:04:07 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:26+07:00 info: '::1 - - [06/Oct/2021:20:04:26 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:30+07:00 info: '::1 - - [06/Oct/2021:20:04:30 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:39+07:00 info: '::1 - - [06/Oct/2021:20:04:39 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:43+07:00 info: '::1 - - [06/Oct/2021:20:04:43 +0000] "GET /api/product/ HTTP/1.1" 200 15897 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:49+07:00 info: '::1 - - [06/Oct/2021:20:04:49 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:04:53+07:00 info: '::1 - - [06/Oct/2021:20:04:53 +0000] "GET /api/product/ HTTP/1.1" 200 16335 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:05:00+07:00 info: '::1 - - [06/Oct/2021:20:05:00 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:05:05+07:00 info: '::1 - - [06/Oct/2021:20:05:05 +0000] "GET /api/product/ HTTP/1.1" 200 16773 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:06:45+07:00 info: '::1 - - [06/Oct/2021:20:06:45 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:06:54+07:00 info: '::1 - - [06/Oct/2021:20:06:54 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:06:57+07:00 info: '::1 - - [06/Oct/2021:20:06:57 +0000] "GET /api/product/ HTTP/1.1" 200 17211 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:25:29+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:492\n' +
+  '                                            const result1 = await connection.query(query2, (err1, result1) => {\n' +
+  '                                                            ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:25:33+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:492\n' +
+  '                                            const result1 = await connection.query(query2, (err1, result1) => {\n' +
+  '                                                            ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:26:57+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:492\n' +
+  '                                            const result1 = await connection.query(query2, (err1, result1) => {\n' +
+  '                                                            ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:27:13+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:492\n' +
+  '                                            const result1 = await connection.query(query2, (err1, result1) => {\n' +
+  '                                                            ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:27:24+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:492\n' +
+  '                                            const result1 = await connection.query(query2, (err1, result1) => {\n' +
+  '                                                            ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:27:26+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:492\n' +
+  '                                            const result1 = await connection.query(query2, (err1, result1) => {\n' +
+  '                                                            ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:28:42+07:00 info: '::1 - - [06/Oct/2021:20:28:42 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:28:47+07:00 info: 'Insert  Product ok, wait for insert to iamge'
+2021-10-07T03:28:47+07:00 info: '::1 - - [06/Oct/2021:20:28:47 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:29:12+07:00 error: '[tutorialService][addPost] Insert to blog table fail: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-10-07T03:29:12+07:00 info: '::1 - - [06/Oct/2021:20:29:12 +0000] "POST /api/product/ HTTP/1.1" 500 199 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:29:29+07:00 info: 'Insert  Product ok, wait for insert to iamge'
+2021-10-07T03:29:29+07:00 info: '::1 - - [06/Oct/2021:20:29:29 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:37:57+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) = {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:38:17+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) = {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:38:32+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) = {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:39:24+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:39:36+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:40:03+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:41:53+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:596\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:42:05+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:597\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:42:06+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:597\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:42:25+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:597\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:42:31+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:597\n' +
+  '                                        await connection.query(query1, (err1, result) => {\n' +
+  '                                        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:43:12+07:00 info: 'Insert  Product ok, wait for insert to iamge'
+2021-10-07T03:43:12+07:00 info: '::1 - - [06/Oct/2021:20:43:12 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:43:19+07:00 info: '::1 - - [06/Oct/2021:20:43:19 +0000] "GET /api/product/ HTTP/1.1" 200 18103 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:44:02+07:00 info: '::1 - - [06/Oct/2021:20:44:02 +0000] "PUT /api/product/41 HTTP/1.1" 500 55 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:44:26+07:00 error: 'uncaughtException: err1 is not defined\n' +
+  'ReferenceError: err1 is not defined\n' +
+  '    at Query.<anonymous> (/home/dalang/deploy/rem/services/productService/productService.js:577:37)\n' +
+  '    at Query.<anonymous> (/home/dalang/deploy/rem/node_modules/mysql/lib/Connection.js:526:10)\n' +
+  '    at Query._callback (/home/dalang/deploy/rem/node_modules/mysql/lib/Connection.js:488:16)\n' +
+  '    at Query.Sequence.end (/home/dalang/deploy/rem/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)\n' +
+  '    at Query.ErrorPacket (/home/dalang/deploy/rem/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)\n' +
+  '    at Protocol._parsePacket (/home/dalang/deploy/rem/node_modules/mysql/lib/protocol/Protocol.js:291:23)\n' +
+  '    at Parser._parsePacket (/home/dalang/deploy/rem/node_modules/mysql/lib/protocol/Parser.js:433:10)\n' +
+  '    at Parser.write (/home/dalang/deploy/rem/node_modules/mysql/lib/protocol/Parser.js:43:10)\n' +
+  '    at Protocol.write (/home/dalang/deploy/rem/node_modules/mysql/lib/protocol/Protocol.js:38:16)\n' +
+  '    at Socket.<anonymous> (/home/dalang/deploy/rem/node_modules/mysql/lib/Connection.js:88:28)'
+2021-10-07T03:44:52+07:00 error: '[productService][addImage] Insert to blog table fail: Error: ER_EMPTY_QUERY: Query was empty'
+2021-10-07T03:44:52+07:00 info: '::1 - - [06/Oct/2021:20:44:52 +0000] "PUT /api/product/112 HTTP/1.1" 500 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:45:53+07:00 error: '[productService][addImage] Insert to blog table fail: Error: ER_EMPTY_QUERY: Query was empty'
+2021-10-07T03:45:53+07:00 info: '::1 - - [06/Oct/2021:20:45:53 +0000] "PUT /api/product/112 HTTP/1.1" 500 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:46:01+07:00 error: '[productService][addImage] Insert to blog table fail: Error: ER_EMPTY_QUERY: Query was empty'
+2021-10-07T03:46:01+07:00 info: '::1 - - [06/Oct/2021:20:46:01 +0000] "PUT /api/product/112 HTTP/1.1" 500 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:46:55+07:00 info: '::1 - - [06/Oct/2021:20:46:55 +0000] "PUT /api/product/112 HTTP/1.1" 200 86 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:47:10+07:00 error: '[productService][addImage] Insert to blog table fail: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-10-07T03:47:10+07:00 info: '::1 - - [06/Oct/2021:20:47:10 +0000] "PUT /api/product/112 HTTP/1.1" 500 199 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:47:51+07:00 error: '[productService][addImage] Insert to blog table fail: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-10-07T03:47:51+07:00 info: '::1 - - [06/Oct/2021:20:47:51 +0000] "PUT /api/product/112 HTTP/1.1" 500 199 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T03:57:08+07:00 error: "uncaughtException: Unexpected token ')'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:651\n' +
+  '                    )\n' +
+  '                    ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token ')'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:57:17+07:00 error: "uncaughtException: Unexpected token ')'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:651\n' +
+  '                    )\n' +
+  '                    ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token ')'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:58:13+07:00 error: "uncaughtException: Unexpected token ')'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:651\n' +
+  '                    )\n' +
+  '                    ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token ')'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:58:42+07:00 error: "uncaughtException: Unexpected token ')'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:651\n' +
+  '                    )\n' +
+  '                    ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token ')'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:58:49+07:00 error: "uncaughtException: Unexpected token ')'\n" +
+  '/home/dalang/deploy/rem/services/productService/productService.js:650\n' +
+  '                    )\n' +
+  '                    ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token ')'\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:59:15+07:00 error: 'uncaughtException: Missing catch or finally after try\n' +
+  '/home/dalang/deploy/rem/services/productService/productService.js:651\n' +
+  '            }\n' +
+  '            ^\n' +
+  '\n' +
+  'SyntaxError: Missing catch or finally after try\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/deploy/rem/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-10-07T03:59:55+07:00 error: '[productService][addImage] Insert to blog table fail: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`remvhdb`.`product`, CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))'
+2021-10-07T03:59:55+07:00 info: '::1 - - [06/Oct/2021:20:59:55 +0000] "PUT /api/product/112 HTTP/1.1" 500 199 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T04:09:38+07:00 info: '::1 - - [06/Oct/2021:21:09:38 +0000] "DELETE /api/product/112 HTTP/1.1" 200 53 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T04:09:47+07:00 info: '::1 - - [06/Oct/2021:21:09:47 +0000] "DELETE /api/product/111 HTTP/1.1" 500 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T04:09:52+07:00 info: '::1 - - [06/Oct/2021:21:09:52 +0000] "DELETE /api/product/112 HTTP/1.1" 500 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T04:09:59+07:00 info: '::1 - - [06/Oct/2021:21:09:59 +0000] "DELETE /api/product/100 HTTP/1.1" 200 53 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T04:10:06+07:00 info: 'Insert  Product ok, wait for insert to iamge'
+2021-10-07T04:10:06+07:00 info: '::1 - - [06/Oct/2021:21:10:06 +0000] "POST /api/product/ HTTP/1.1" 200 56 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'
+2021-10-07T04:10:11+07:00 info: '::1 - - [06/Oct/2021:21:10:11 +0000] "GET /api/product/ HTTP/1.1" 200 17664 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"\n'

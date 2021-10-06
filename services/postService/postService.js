@@ -205,18 +205,12 @@ class PostService {
             if (result.affectedRows === 0) {
                 return reject(`post with id ${id} not found`)
             }
-
             return resolve(result)
         })
     }
     deletePost(id) {
         return new Promise(async (resolve, reject) => {
             try {
-                // const query = `
-                //     SELECT image_cloud_id FROM post
-                //     WHERE id = ${mysql.escape(id)}
-                // `
-
                 const query = `
                     DELETE FROM post
                     WHERE id = ${mysql.escape(id)}

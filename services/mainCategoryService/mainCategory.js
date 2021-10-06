@@ -172,10 +172,12 @@ class MainCategoryService {
                     return reject(`main category with id ${id} not found`)
                 }
                 await this.mysqlDb.commit()
+                await this.mysqlDb.close()
                 return resolve()
             } catch (err) {
                 logger.error(`[CategoryService][deleteCategory] errors: `, err)
                 await this.mysqlDb.rollback()
+                await this.mysqlDb.close()
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             }
         })

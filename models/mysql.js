@@ -22,6 +22,8 @@ class MysqlDB {
             user: dbSettings.user,
             password: dbSettings.password,
             database: dbSettings.database,
+            queueLimit: 0,
+            waitForConnection: true
         })
     }
 
@@ -49,6 +51,9 @@ class MysqlDB {
     close() {
         return util.promisify(this.connection.end).call(this.connection)
     }
+    // release() {
+    //     return util.promisify(this.connection.rele).call(this.connection)
+    // }
 }
 
 module.exports = MysqlDB

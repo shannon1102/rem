@@ -91,10 +91,12 @@ class HotProductService {
                     return reject(`This product with id ${product_id} is not hot product`)
                 }
                 await this.mysqlDb.commit()
+                await this.mysqlDb.close()
                 return resolve(`Remove hot-product with id ${product_id} sucessfully`)
             } catch (err) {
                 logger.error(`[hotProductService][deleteHotProduct] errors: `, err)
                 await this.mysqlDb.rollback()
+                await this.mysqlDb.close()
                 return reject(err.sqlMessage)
             }
         })
